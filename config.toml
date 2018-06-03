@@ -10,7 +10,7 @@ canonifyurls = true
 paginate = 1
 
 [Params]
-  description = "Learn python by practice"
+  description = "Learn python by doing"
   twitterName = "adnan"
   facebookName = "adnan"
   instagramName = "adnan"
