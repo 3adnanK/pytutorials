@@ -2,6 +2,7 @@ baseURL = "https://3adnank.github.io/pytutorials/"
 languageCode = "en-us"
 title = "PyTutorials"
 publishDir = "docs"
+themesDir = "themes"
 theme = "casper"
 staticDir = ["images"]
 Copyright = "All rights reserved - 2018"
@@ -20,7 +21,7 @@ paginate = 1
   image = "/images/coversad.jpg"
   pages = 5
   author = "Adnan"
-  authorlocation = "Grenoble, France"
+  #authorlocation = "Grenoble, France"
   authorwebsite = "https://www.logorain.com"
   hideHUGOSupport = true
   
