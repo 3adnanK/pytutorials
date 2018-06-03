@@ -11,9 +11,9 @@ paginate = 1
 
 [Params]
   description = "Learn python by doing"
-  twitterName = "adnan"
-  facebookName = "adnan"
-  instagramName = "adnan"
+  twitterName = "adnankandar"
+  instagramName = "adnankandar"
+  github = "3adnank"
   readingTime = true
   website = "fas"
   logo = "https://3adnank.github.io/pytutorials/images/logo.png"
