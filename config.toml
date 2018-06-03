@@ -1,6 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "PyTutorials"
+publishDir = "docs"
 theme = "casper"
 staticDir = ["images"]
 Copyright = "All rights reserved - 2018"
