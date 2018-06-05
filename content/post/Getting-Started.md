@@ -14,4 +14,4 @@ by 2 or 3 exercices to practice what you have learned.<br/>
 Two tutorials will be posted each week.<br/>
 In this tutorial we will be using python 3.<br/>
 I am assuming that you already have python installed on your machine
-if not you can download it from [[here](https://www.python.org/) or you can use an online interpreter for python [here](http://www.repl.it/languages/python3).
+if not you can download it from [here](https://www.python.org/) or you can use an online interpreter for python [here](http://www.repl.it/languages/python3).
