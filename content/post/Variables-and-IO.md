@@ -13,7 +13,8 @@ In this tutorial you will learn:
 3. How to use print to display variables
 4. How to read user inputs
 
-1. What is a variable:
+1 What is a variable:
+=====================
 To understand what is a variable lets imagine that we have two boxes, the first box contain some clothes and the second one
 contain some video games CD's as you see our two boxes are containers that holdes some objects.<br/>
 Now lets say the we want to get our video games CD's, to do that we simply open the box that contain the video games, but
@@ -26,7 +27,8 @@ its content.<br/>
 
 Now that you know what is a variable, lets see how to make one in python.
 
-2. How to make variables in python:
+2 How to make variables in python:
+==================================
 To make a variable in python we first define the name of our variable and then we use the '=' sign that we call it the assignement sign to assign values to our variable.
 
 {{< highlight python "linenos=inline,linenostart=0" >}}
@@ -49,13 +51,13 @@ In python and other programming language we have some rules to follow to create 
 * Variables in python are case-sesitive which mean that MyVariable and myvariable are two different variables.
 
 The list of reserved keywords:
-
-|None  |class    |is     |lambda  |nonlocal |raise
-|True  |and      |not    |if      |global   |for
-|False |assert   |in     |elif    |import   |from
-|as    |del      |or     |except  |with     |
-|def   |else     |return |try     |while    |
-|break |continue |yield  |finally |pass     |
+|------|---------|-------|--------|---------|------|
+|None  |class    |is     |lambda  |nonlocal |raise |
+|True  |and      |not    |if      |global   |for   |
+|False |assert   |in     |elif    |import   |from  |
+|as    |del      |or     |except  |with     |      |
+|def   |else     |return |try     |while    |      |
+|break |continue |yield  |finally |pass     |      |
 
 Now lets see some examples:
 {{< highlight python "linenos=inline,linenostart=0" >}}
@@ -66,7 +68,8 @@ this is because our variable name does not follow the rules of python variables.
 
 Now you know how to create a variable now lets see how to print it.
 
-3. How to use print to display variables:
+3 How to use print to display variables:
+========================================
 We use the print() function to outpout anything to our console window (we will learn more about functions in later tutorial).<br/>
 Lets print now our video_games_CDs variable.
 
@@ -112,7 +115,7 @@ Now lets see another useful argument that can be passed to the print function.
 print("Hello")
 print("World")
 {{< / highlight >}}
-> OUTPUT: Hello
+> OUTPUT: Hello<br/>
 > OUTPUT: World
 		
 When you run this code you will see that each word is printed on a seperate line, this is due to the default value of the ''end'' argument
@@ -128,7 +131,8 @@ As you see we have changed the value of the ''end'' argument from end line which
 to output the next value of the print function on the same line of the first print function output.<br/>
 Now that you know how to create a variable in print it out lets see how to read user inputs.<br/>
 
-4. How to read user inputs:
+4 How to read user inputs:
+==========================
 To read user input in python we use the input() function.
 {{< highlight python "linenos=inline,linenostart=0" >}}
 user_name = input("Please enter your name: ")
