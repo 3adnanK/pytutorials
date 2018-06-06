@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2018</copyright>
-    <lastBuildDate>Mon, 04 Jun 2018 23:10:16 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Jun 2018 14:14:37 +0000</lastBuildDate>
     
 	<atom:link href="https://3adnank.github.io/pytutorials/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Variables and Inputs/Outputs</title>
+      <link>https://3adnank.github.io/pytutorials/variables-and-io/</link>
+      <pubDate>Wed, 06 Jun 2018 14:14:37 +0000</pubDate>
+      
+      <guid>https://3adnank.github.io/pytutorials/variables-and-io/</guid>
+      <description>In this tutorial you will learn: 1. What is a variable 2. How to make variables in python 3. How to use print to display variables 4. How to read user inputs
+ What is a variable: To understand what is a variable lets imagine that we have two boxes, the first box contain some clothes and the second one contain some video games CD&amp;rsquo;s as you see our two boxes are containers that holdes some objects.</description>
+    </item>
     
     <item>
       <title>Getting Started</title>

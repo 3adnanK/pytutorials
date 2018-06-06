@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Variables and Inputs/Outputs"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@adnankandar"/>
+
+
+
+  	<meta property="og:title" content="Variables and Inputs/Outputs &middot; PyTutorials" />
+  	<meta property="og:site_name" content="PyTutorials" />
+  	<meta property="og:url" content="https://3adnank.github.io/pytutorials/variables-and-io/" />
+
+    
+        
+            <meta property="og:image" content="/images/cover.jpg"/>
+        
+    
+
+    
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2018-06-06T14:14:37Z" />
+
+    
+    
+
+    <title>Variables and Inputs/Outputs &middot; PyTutorials</title>
+
+    
+    <meta name="description" content="In this tutorial you will learn: 1. What is a variable 2. How to make variables in python 3. How to use print to display variables 4. How to read user inputs
+ W" />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://3adnank.github.io/pytutorials/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="https://3adnank.github.io/pytutorials/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="https://3adnank.github.io/pytutorials/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="https://3adnank.github.io/pytutorials/css/nav.css" />
+
+    
+
+    
+
+    
+      
+          <link href="https://3adnank.github.io/pytutorials/index.xml" rel="alternate" type="application/rss+xml" title="PyTutorials" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.41" />
+
+    <link rel="canonical" href="https://3adnank.github.io/pytutorials/variables-and-io/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": ,
+        "logo": https://3adnank.github.io/pytutorials/https://3adnank.github.io/pytutorials/images/logo.png
+    },
+    "author": {
+        "@type": "Person",
+        "name": ,
+        
+        "image": {
+            "@type": "ImageObject",
+            "url": https://3adnank.github.io/pytutorials/https://3adnank.github.io/pytutorials/images/logo.png,
+            "width": 250,
+            "height": 250
+        }, 
+        
+        "url": https://www.logorain.com,
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ]
+    },
+    "headline": Variables and Inputs/Outputs,
+    "name": Variables and Inputs/Outputs,
+    "wordCount": 1165,
+    "timeRequired": "PT6M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": https://3adnank.github.io/pytutorials/variables-and-io/,
+    "datePublished": 2018-06-06T14:14Z,
+    "dateModified": 2018-06-06T14:14Z,
+    
+    
+    "description": ,
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": https://3adnank.github.io/pytutorials/variables-and-io/
+    }
+}
+    </script>
+    
+
+
+    
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-120319729-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://3adnank.github.io/pytutorials/home/">Home</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://3adnank.github.io/pytutorials/about/">About</a>
+            </li>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="https://3adnank.github.io/pytutorials/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="https://3adnank.github.io/pytutorials/"><img src="https://3adnank.github.io/pytutorials/images/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Variables and Inputs/Outputs</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2018-06-06T14:14:37Z">
+            Jun 6, 2018
+          </time>
+        
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      
+
+<p>In this tutorial you will learn:
+1. What is a variable
+2. How to make variables in python
+3. How to use print to display variables
+4. How to read user inputs</p>
+
+<ol>
+<li>What is a variable:
+To understand what is a variable lets imagine that we have two boxes, the first box contain some clothes and the second one
+contain some video games CD&rsquo;s as you see our two boxes are containers that holdes some objects.<br/>
+Now lets say the we want to get our video games CD&rsquo;s, to do that we simply open the box that contain the video games, but
+how can we know which box does it contain the CD&rsquo;s ? if the two boxes looks the same, this is actually not
+a big problem for two boxes but if we have much more boxes it will be a very difficult task to find the specific box that we want.<br/>
+To solve this problem we add a label to the box, the label will describe the content of this box so that we can destinguish between the boxes.<br/></li>
+</ol>
+
+<p>Variables are simply just like this boxes we create them to hold some data that we use during the program life cycle, each variable has a name that describe
+its content.<br/></p>
+
+<p>Now that you know what is a variable, lets see how to make one in python.</p>
+
+<ol>
+<li>How to make variables in python:
+To make a variable in python we first define the name of our variable and then we use the &lsquo;=&rsquo; sign that we call it the assignement sign to assign values to our variable.</li>
+</ol>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>video_games_CDs <span style="color:#f92672">=</span> <span style="color:#ae81ff">65</span></code></pre></div>
+
+<p>As you see we have asigned 65 to the video_games_CDs variable, this variable name describe its content so that 65 means the number of CDs that we have.<br/></p>
+
+<p>In python and other programming language we have some rules to follow to create a correct variable name, this rules are the following:</p>
+
+<ul>
+<li><p>Variable can only be a combination of letters lowercase or uppercase(a-z)(A-Z) or digits (0-9) or an underscore _
+Exmeple: MyVariable, my_variable, my_Variable1</p></li>
+
+<li><p>Variable can only start with letter or underscore, it can not start with digits</p></li>
+
+<li><p>Variable can not contain any special symbol like @, #, $, %, !, * etc&hellip;</p></li>
+
+<li><p>Variable can not be a special keyword (special keyword are some names reserved by python)</p></li>
+
+<li><p>Variables in python are case-sesitive which mean that MyVariable and myvariable are two different variables.</p></li>
+</ul>
+
+<p>The list of reserved keywords:</p>
+
+<p>|None  |class    |is     |lambda  |nonlocal |raise
+|True  |and      |not    |if      |global   |for
+|False |assert   |in     |elif    |import   |from
+|as    |del      |or     |except  |with     |
+|def   |else     |return |try     |while    |
+|break |continue |yield  |finally |pass     |</p>
+
+<p>Now lets see some examples:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span><span style="color:#66d9ef">continue</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span></code></pre></div>
+When you run the code you will get a &ldquo;SyntaxError: invalid syntax&rdquo;
+this is because our variable name does not follow the rules of python variables.<br/></p>
+
+<p>Now you know how to create a variable now lets see how to print it.</p>
+
+<ol>
+<li>How to use print to display variables:
+We use the print() function to outpout anything to our console window (we will learn more about functions in later tutorial).<br/>
+Lets print now our video_games_CDs variable.</li>
+</ol>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>video_games_CDs <span style="color:#f92672">=</span> <span style="color:#ae81ff">65</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span><span style="color:#66d9ef">print</span>(video_games_CDs)</code></pre></div>
+&gt; OUTPUT: 65</p>
+
+<p>As you see our print function prints out the value of our variable.</br>
+We can add more argument to the print function by seperating each argument with a comma &lsquo;,&rsquo;</p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>cars <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>houses <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Hey i have&#34;</span>, cars, <span style="color:#e6db74">&#34;cars and&#34;</span>, houses, <span style="color:#e6db74">&#34;houses&#34;</span>)</code></pre></div>
+&gt; OUTPUT: Hey i have 3 cars and 2 houses</p>
+
+<p>In this example we have passed 5 arguments to our print function which demonstrate that we can add as much as we want of arguments.<br/>
+Note that if we want to pass a string (which is a data type in python, we will learn more about string later in another tutorial)
+we use the double quotes &ldquo;&rdquo; we can also use single quotes &ldquo;.<br/></p>
+
+<p>Now lets see this example:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Blue&#34;</span>, <span style="color:#e6db74">&#34;Silver&#34;</span>, <span style="color:#e6db74">&#34;Red&#34;</span>)</code></pre></div>
+&gt; OUTPUT: Blue Silver Red</p>
+
+<p>When your run this code you will see that each number is seperated by space, this is because the default arguments in the print function are seperated by space
+but we can change that by passing &lsquo;sep&rsquo; argument to the print function.<br/>
+lets see how to do that:</p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Blue&#34;</span>, <span style="color:#e6db74">&#34;Silver&#34;</span>, <span style="color:#e6db74">&#34;Red&#34;</span>, sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;, &#39;</span>)</code></pre></div>
+&gt; OUTPUT: Blue, Silver, Red</p>
+
+<p>As you see our values are now seperated with comma and a space, you can define any seperator you want.<br/>
+Now lets see another useful argument that can be passed to the print function.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Hello&#34;</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;World&#34;</span>)</code></pre></div>
+&gt; OUTPUT: Hello
+          World</p>
+
+<p>When you run this code you will see that each word is printed on a seperate line, this is due to the default value of the &ldquo;end&rdquo; argument
+this argument define how do we want to end the world in the print function, by default it is end line, which force the interpreter to return to the line
+when the print function outpout its content.<br/>
+Lets see an example on how to change this default end line.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Hello&#34;</span>, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34; &#34;</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;World&#34;</span>)</code></pre></div>
+&gt; OUTPUT: Hello World
+As you see we have changed the value of the &ldquo;end&rdquo; argument from end line which is represented by &ldquo;\n&rdquo; to an empty space this caused the interpreter
+to output the next value of the print function on the same line of the first print function output.<br/>
+Now that you know how to create a variable in print it out lets see how to read user inputs.<br/></p>
+
+<ol>
+<li>How to read user inputs:
+To read user input in python we use the input() function.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>user_name <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Please enter your name: &#34;</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;The user name is:&#34;</span>, user_name)</code></pre></div>
+When you run this code the interpreter or the console window will prints out the message that we defined in the input function
+now the program will wait us until we type somthing and hit enter.<br/>
+When you enter your name and hit enter, the value will be assigned to the user_name variable and it will be printed in the print function.<br/></li>
+</ol>
+
+<h2 id="note">NOTE:</h2>
+
+<p>print(): is a function in python 3.x but in python 2.x is a statement: print &ldquo;something&rdquo;.<br/>
+input(): is a function that read use inputs in python 3.x, but in python 2.x we use raw_input() function to read user inputs.<br/></p>
+
+<h1 id="exercices-section">Exercices Section:</h1>
+
+<p>This section will contain some exercices to practice what you have learned.</p>
+
+<h2 id="exercice-1">Exercice 1</h2>
+
+<p>Which one of this variables name is correct:
+* Age = 56
+* $My_age = 45
+* __userName = &lsquo;KANIKI&rsquo;
+* break = 2
+* @email = &ldquo;email@mail.com&rdquo;</p>
+
+<h2 id="exercice-2">Exercice 2</h2>
+
+<p>Write a program that ask the user to write his name and age, and assign the values to (user_name and user_age)
+then print the name and the age of the user like the following:
+OUTPUT: Hi my name is your_username and i am you_userage</p>
+
+<h2 id="exercice-3">Exercice 3</h2>
+
+<p>month = 3
+day = 16
+year = 2018
+use the sep argument of the print function to print the variables like the following result:
+OUTPUT: 16/3/2018</p>
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+
+
+
+
+
+
+
+
+<figure class="author-image">
+    <a class="img" href="https://3adnank.github.io/pytutorials/" style="background-image: url(/images/logo.png)"><span class="hidden">Adnan's Picture</span></a>
+</figure>
+
+
+<section class="author">
+  <h4><a href="https://3adnank.github.io/pytutorials/">Adnan</a></h4>
+  
+  <p>Read <a href="https://3adnank.github.io/pytutorials/">more posts</a> by this author.</p>
+  
+  <div class="author-meta">
+    
+    <span class="author-link icon-link"><a href="https://www.logorain.com">https://www.logorain.com</a></span>
+  </div>
+</section>
+
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Variables%20and%20Inputs%2fOutputs&nbsp;-&nbsp;PyTutorials&amp;url=https%3a%2f%2f3adnank.github.io%2fpytutorials%2fvariables-and-io%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2f3adnank.github.io%2fpytutorials%2fvariables-and-io%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2f3adnank.github.io%2fpytutorials%2fvariables-and-io%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+
+
+
+
+
+
+  </footer>
+</article>
+
+</main>
+
+
+  <aside class="read-next">
+  
+  
+      <a class="read-next-story prev" style="no-cover" href="https://3adnank.github.io/pytutorials/getting-started/">
+          <section class="post">
+              <h2>Getting Started</h2>
+          </section>
+      </a>
+  
+</aside>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">PyTutorials</a> All rights reserved - 2018</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="https://3adnank.github.io/pytutorials/js/jquery.js"></script>
+    <script type="text/javascript" src="https://3adnank.github.io/pytutorials/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://3adnank.github.io/pytutorials/js/index.js"></script>
+    
+</body>
+</html>
+
