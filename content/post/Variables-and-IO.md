@@ -51,6 +51,8 @@ In python and other programming language we have some rules to follow to create 
 * Variables in python are case-sesitive which mean that MyVariable and myvariable are two different variables.
 
 The list of reserved keywords:
+
+|      |         |       |        |         |      |
 |------|---------|-------|--------|---------|------|
 |None  |class    |is     |lambda  |nonlocal |raise |
 |True  |and      |not    |if      |global   |for   |
