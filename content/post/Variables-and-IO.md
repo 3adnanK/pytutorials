@@ -156,6 +156,7 @@ This section will contain some exercices to practice what you have learned.
 Exercice 1
 ----------
 Which one of this variables name is correct:
+
 * Age = 56
 * $My_age = 45
 * __userName = 'KANIKI'
@@ -166,12 +167,14 @@ Exercice 2
 ----------
 Write a program that ask the user to write his name and age, and assign the values to (user_name and user_age)
 then print the name and the age of the user like the following:
+
 OUTPUT: Hi my name is your_username and i am you_userage
 
 Exercice 3
 ----------
-month = 3
-day = 16
-year = 2018
+month = 3<br/>
+day = 16<br/>
+year = 2018<br/>
 use the sep argument of the print function to print the variables like the following result:
+
 OUTPUT: 16/3/2018
