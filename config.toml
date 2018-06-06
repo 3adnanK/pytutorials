@@ -26,16 +26,6 @@ paginate = 10
   authorwebsite = "https://www.logorain.com"
   hideHUGOSupport = true
   
-[[menu.main]]
-  name = "Home"
-  url = "/home/"
-  weight = 3
-  
-[[menu.main]]
-  name = "About"
-  url = "/about/"
-  weight = 1
-  
 [permalinks]
   post = "/:slug/"
 [sitemap]
