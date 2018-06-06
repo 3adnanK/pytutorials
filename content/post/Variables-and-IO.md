@@ -113,7 +113,7 @@ print("Hello")
 print("World")
 {{< / highlight >}}
 > OUTPUT: Hello
-		  World
+> OUTPUT: World
 		
 When you run this code you will see that each word is printed on a seperate line, this is due to the default value of the ''end'' argument
 this argument define how do we want to end the world in the print function, by default it is end line, which force the interpreter to return to the line
