@@ -7,7 +7,7 @@ share: true
 slug: "variables-and-IO"
 ---
 
-In this tutorial you will learn:
+In this tutorial you will learn:<br/>
 1. What is a variable
 2. How to make variables in python
 3. How to use print to display variables
