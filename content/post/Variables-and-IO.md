@@ -130,6 +130,7 @@ print("Hello", end=" ")
 print("World")
 {{< / highlight >}}
 > OUTPUT: Hello World
+
 As you see we have changed the value of the ''end'' argument from end line which is represented by ''\n'' to an empty space this caused the interpreter
 to output the next value of the print function on the same line of the first print function output.<br/>
 Now that you know how to create a variable in print it out lets see how to read user inputs.<br/>
