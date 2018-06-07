@@ -8,10 +8,10 @@ slug: "variables-and-IO"
 ---
 
 In this tutorial you will learn:<br/>
-1. What is a variable
-2. How to make variables in python
-3. How to use print to display variables
-4. How to read user inputs
+1. What is a variable.
+2. How to make variables in python.
+3. How to use print to display variables.
+4. How to read user inputs.
 
 1 What is a variable:
 =====================
