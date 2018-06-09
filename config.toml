@@ -8,6 +8,7 @@ staticDir = ["images"]
 Copyright = "All rights reserved - 2018"
 canonifyurls = true
 paginate = 10
+DisqusShortname = "https-3adnank-github-io-pytutorials"
 
 [Params]
   description = "Learn python by doing"
@@ -15,6 +16,7 @@ paginate = 10
   instagramName = "adnankandar"
   githubName = "3adnank"
   readingTime = true
+  comments = true
   website = "https://www.logorain.com"
   logo = "https://3adnank.github.io/pytutorials/images/logo.png"
   cover = "https://3adnank.github.io/pytutorials/images/cover.jpg"
