@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Python Data Types Part One"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@adnankandar"/>
+
+
+
+  	<meta property="og:title" content="Python Data Types Part One &middot; PyTutorials" />
+  	<meta property="og:site_name" content="PyTutorials" />
+  	<meta property="og:url" content="https://3adnank.github.io/pytutorials/python-data-types-part-one/" />
+
+    
+        
+            <meta property="og:image" content="/images/cover.jpg"/>
+        
+    
+
+    
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2018-06-11T15:04:47Z" />
+
+    
+    
+
+    <title>Python Data Types Part One &middot; PyTutorials</title>
+
+    
+    <meta name="description" content="In this tutorial you will learn:
+ Numbers Type conversion  Introduction: Python data-type is a classification that specifies the type of value a variable has. S" />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://3adnank.github.io/pytutorials/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="https://3adnank.github.io/pytutorials/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="https://3adnank.github.io/pytutorials/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="https://3adnank.github.io/pytutorials/css/nav.css" />
+
+    
+
+    
+
+    
+      
+          <link href="https://3adnank.github.io/pytutorials/index.xml" rel="alternate" type="application/rss+xml" title="PyTutorials" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.41" />
+
+    <link rel="canonical" href="https://3adnank.github.io/pytutorials/python-data-types-part-one/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": ,
+        "logo": https://3adnank.github.io/pytutorials/https://3adnank.github.io/pytutorials/images/logo.png
+    },
+    "author": {
+        "@type": "Person",
+        "name": ,
+        
+        "image": {
+            "@type": "ImageObject",
+            "url": https://3adnank.github.io/pytutorials/https://3adnank.github.io/pytutorials/images/logo.png,
+            "width": 250,
+            "height": 250
+        }, 
+        
+        "url": https://www.logorain.com,
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ]
+    },
+    "headline": Python Data Types Part One,
+    "name": Python Data Types Part One,
+    "wordCount": 608,
+    "timeRequired": "PT3M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": https://3adnank.github.io/pytutorials/python-data-types-part-one/,
+    "datePublished": 2018-06-11T15:04Z,
+    "dateModified": 2018-06-11T15:04Z,
+    
+    
+    "description": ,
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": https://3adnank.github.io/pytutorials/python-data-types-part-one/
+    }
+}
+    </script>
+    
+
+
+    
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-120319729-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="https://3adnank.github.io/pytutorials/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="https://3adnank.github.io/pytutorials/"><img src="https://3adnank.github.io/pytutorials/images/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button icon-feed" href="https://3adnank.github.io/pytutorials/index.xml" >&nbsp;&nbsp;Subscribe</a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Python Data Types Part One</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2018-06-11T15:04:47Z">
+            Jun 11, 2018
+          </time>
+        
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      
+
+<p>In this tutorial you will learn:</p>
+
+<ol>
+<li>Numbers</li>
+<li>Type conversion</li>
+</ol>
+
+<h2 id="introduction">Introduction:</h2>
+
+<p>Python data-type is a classification that specifies the type of value a variable has.
+Since everything in python is an object, every type in python have his own specific methods and attributes that can be used on this type.
+(we will discuss more about Ojbects later and see how to create our own data type).<br/></p>
+
+<p>This tutorial will be devided in two part the first part which is the current tutorial will be about the numbers data-types and
+the second part will be about some more complex data-types like list and tuple.</p>
+
+<h2 id="1-numbers-and-type">1 Numbers and type():</h2>
+
+<p>Python support different type of numbers like int (Integers), float (floating point) and complex (complex number).<br/></p>
+
+<ul>
+<li>Integer is a number that is not a fraction, it can be negative or positive number: (23, 65, -5)</li>
+<li>Floating point is a number that contain floating decimal like: (25.6, 75.0, 55.33, -33.45)</li>
+<li>Complex number is a number that can be expressed in the form a + bi, in python the i is replaced by j : (23 + 4i).
+You may not use this type unless you have some math problem that use this type. Actually i have never used this type in my code
+but it is good to know about it in case you need it.
+You can read more about complex number <a href="https://en.wikipedia.org/wiki/Complex_number">here</a></li>
+</ul>
+
+<p>Now lets some examples:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span><span style="color:#75715e">#int type</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>x <span style="color:#f92672">=</span> <span style="color:#ae81ff">24</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span><span style="color:#75715e">#float type</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span>y <span style="color:#f92672">=</span> <span style="color:#ae81ff">65.25</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">5</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">6</span><span style="color:#75715e">#complex type</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">7</span>z <span style="color:#f92672">=</span> <span style="color:#ae81ff">24</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">3j</span></code></pre></div>
+
+<p>When you run this code each variable type will be defined based on its own value.<br/>
+Python automaticaly knows what type the variable is based on the value assigned to it.<br/></p>
+
+<p>In python we can use a built-in function called &ldquo;&lsquo;type()&rdquo;&rsquo; to see the type of our variables, lets see an example of that:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 0</span><span style="color:#75715e">#int type</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span>x <span style="color:#f92672">=</span> <span style="color:#ae81ff">24</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span><span style="color:#66d9ef">print</span>(type(x))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span><span style="color:#75715e">#float type</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>y <span style="color:#f92672">=</span> <span style="color:#ae81ff">65.25</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span><span style="color:#66d9ef">print</span>(type(y))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span><span style="color:#75715e">#complex type</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span>z <span style="color:#f92672">=</span> <span style="color:#ae81ff">24</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">3j</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span><span style="color:#66d9ef">print</span>(type(z))</code></pre></div>
+
+<blockquote>
+<p>OUTPUT: &lt;class &lsquo;int&rsquo;&gt;</p>
+
+<p>OUTPUT: &lt;class &lsquo;float&rsquo;&gt;</p>
+
+<p>OUTPUT: &lt;class &lsquo;complex&rsquo;&gt;</p>
+</blockquote>
+
+<p>As you see the &ldquo;&lsquo;type&rdquo;&rsquo; function tells us the type of each variable.<br/></p>
+
+<p>The numbers that we have been using and what we always use and see around us are decimal (base 10) number system, but there is some other number systems
+that can be used by programmers like: binary (base 2), octal (base 8) and hexadecimal (base 16).<br/>
+In python we can represent these numbers by adding a special prefix.<br/></p>
+
+<table>
+<thead>
+<tr>
+<th>Number System</th>
+<th>Prefix</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Binary</td>
+<td>&lsquo;0b&rsquo; Or &lsquo;0B&rsquo;</td>
+</tr>
+
+<tr>
+<td>Octal</td>
+<td>&lsquo;0o&rsquo; Or &lsquo;0O&rsquo;</td>
+</tr>
+
+<tr>
+<td>Hexadecimal</td>
+<td>&lsquo;0x&rsquo; Or &lsquo;0X&rsquo;</td>
+</tr>
+</tbody>
+</table>
+
+<p>Lets see this in code:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 0</span><span style="color:#75715e">#binary</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span>x <span style="color:#f92672">=</span> <span style="color:#ae81ff">0b01101</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span><span style="color:#75715e">#octal</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span>y <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>o15
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span><span style="color:#75715e">#hexadecimal</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span>z <span style="color:#f92672">=</span> <span style="color:#ae81ff">0xD</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span><span style="color:#66d9ef">print</span>(x, y, z, sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;, &#39;</span>)</code></pre></div>
+
+<blockquote>
+<p>OUTPUT: 13, 13, 13</p>
+</blockquote>
+
+<p>As you see we have printed the number 13 in a three different number systems.<br/>
+You can read more about the different type of number systems <a href="https://www.rapidtables.com/math/number/Numeral_system.html">here</a>.</p>
+
+<h2 id="2-type-conversion">2 Type conversion:</h2>
+
+<p>In python we can convert one type of number to another type. Lets see an example :</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 0</span><span style="color:#75715e">#int</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span>x <span style="color:#f92672">=</span> <span style="color:#ae81ff">55</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span><span style="color:#66d9ef">print</span>(type(x))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span><span style="color:#75715e">#float </span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>y <span style="color:#f92672">=</span> <span style="color:#ae81ff">33.45</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span><span style="color:#66d9ef">print</span>(type(y))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span><span style="color:#75715e">#convert x from int to float</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span>x <span style="color:#f92672">=</span> float(x)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;converted x&#34;</span>, type(x))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12</span><span style="color:#75715e">#convert y from float to int</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13</span>y <span style="color:#f92672">=</span> int(y)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14</span><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;converted y&#34;</span>, type(y))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">15</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">16</span><span style="color:#75715e">#convert string to complex</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">17</span>z <span style="color:#f92672">=</span> complex(<span style="color:#e6db74">&#39;3 + 4j&#39;</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">18</span><span style="color:#66d9ef">print</span>(type(z))</code></pre></div>
+
+<blockquote>
+<p>OUTPUT: &lt;class &lsquo;int&rsquo;&gt;</p>
+
+<p>OUTPUT: &lt;class &lsquo;float&rsquo;&gt;</p>
+
+<p>OUTPUT: converted x &lt;class &lsquo;float&rsquo;&gt;</p>
+
+<p>OUTPUT: converted y &lt;class &lsquo;int&rsquo;&gt;</p>
+
+<p>OUTPUT: &lt;class &lsquo;complex&rsquo;&gt;</p>
+</blockquote>
+
+<p>As you see we have converted int type to float and float to int, using the &ldquo;&lsquo;int()&rdquo;&rsquo;, &ldquo;&lsquo;float&rdquo;&rsquo; and &ldquo;&lsquo;complex&rdquo;&rsquo; built-in functions.<br/>
+In part two of this tutorial we will learn more about some other important types like list, tuple and string.<br/></p>
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+
+
+
+
+
+
+
+
+<figure class="author-image">
+    <a class="img" href="https://3adnank.github.io/pytutorials/" style="background-image: url(/images/logo.png)"><span class="hidden">Adnan's Picture</span></a>
+</figure>
+
+
+<section class="author">
+  <h4><a href="https://3adnank.github.io/pytutorials/">Adnan</a></h4>
+  
+  <p>Read <a href="https://3adnank.github.io/pytutorials/">more posts</a> by this author.</p>
+  
+  <div class="author-meta">
+    
+    <span class="author-link icon-link"><a href="https://www.logorain.com">https://www.logorain.com</a></span>
+  </div>
+</section>
+
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Python%20Data%20Types%20Part%20One&nbsp;-&nbsp;PyTutorials&amp;url=https%3a%2f%2f3adnank.github.io%2fpytutorials%2fpython-data-types-part-one%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2f3adnank.github.io%2fpytutorials%2fpython-data-types-part-one%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2f3adnank.github.io%2fpytutorials%2fpython-data-types-part-one%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+var disqus_config = function () {
+this.page.url = "https:\/\/3adnank.github.io\/pytutorials\/python-data-types-part-one\/";  
+this.page.identifier = "https:\/\/3adnank.github.io\/pytutorials\/python-data-types-part-one\/"; 
+};
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://https-3adnank-github-io-pytutorials.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+
+
+  </footer>
+</article>
+
+</main>
+
+
+  <aside class="read-next">
+  
+  
+      <a class="read-next-story prev" style="no-cover" href="https://3adnank.github.io/pytutorials/multiple-assignment-and-comments/">
+          <section class="post">
+              <h2>Multiple Assignment and Comments</h2>
+          </section>
+      </a>
+  
+</aside>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">PyTutorials</a> All rights reserved - 2018</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="https://3adnank.github.io/pytutorials/js/jquery.js"></script>
+    <script type="text/javascript" src="https://3adnank.github.io/pytutorials/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://3adnank.github.io/pytutorials/js/index.js"></script>
+    
+</body>
+</html>
+
