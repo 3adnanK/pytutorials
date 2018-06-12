@@ -94,7 +94,7 @@ division.<br/>
 2.Assignment operators:
 -----------------------
 We have already used an assignment operator which is  the '=' symbol.<br/>
-We use the assignment operators to assign a value to a variable. In python we have like a shortcut assignment operators to assign a value to the variable.<br/>
+We use the assignment operators to assign values to variables.<br/>
 
 |Operator   |Explanation                                                            |
 |-----------|-----------------------------------------------------------------------|
@@ -248,7 +248,7 @@ Lets take a look at this code:<br/>
 In the first example we have assigned to ''x'' a logical operation, the first part is (5 > 2) this will return True, and the second part
 is (3 > 1) which also return True, and by using the logical ''and'' operator: True and True will return a True. If one of the comparison operator returned False, then
 the result of our logical operation will be False.<br/>
-The second example is also devide in two part, the first is (5 == 5) which return True and the second part is (5 > 8) which return False, by using the ''or'' logical
+The second example is also devided in two part, the first is (5 == 5) which returns True and the second part is (5 > 8) which returns False, by using the ''or'' logical
 operator the result will be True, because the ''or'' operator needs one of the two operand to be True to return True.<br/>
 The last example is very simple the comparison operation (5 > 2) return True, and by using the ''not'' operator we get the inverse of the result which is False in our case.<br/>
 
@@ -292,7 +292,7 @@ print(a)
 
 {{< / highlight >}}
 
-As you see the ''&'' operator works like that when it finds 1 1 it gives us 1, if it finds 1 0 or 0 1 or 0 0 it returns 0.<br/>
+As you see the ''&'' operator works like this: when it finds 1 1 it returns 1, if it finds 1 0 or 0 1 or 0 0 it returns 0.<br/>
 To read more about bitwise operations click [here](https://en.wikipedia.org/wiki/Bitwise_operations_in_C)
 
 6 Membership operators:
@@ -315,8 +315,8 @@ print('h' not in x)
 
 {{< / highlight >}}
 
-In the first example returns True because the uppercase 'H' is in pur sequence, and the second example returns True because the lowecase 'h' is not in the sequence.<br/>
-This mean that you need to be careful with this because it's case sensitive 'h' is different from 'H'.<br/>
+In the first example returns True because the uppercase 'H' is in the sequence, and the second example returns True because the lowecase 'h' is not in the sequence.<br/>
+This mean that you need to be careful with this because it's case sensitive, 'h' is different from 'H'.<br/>
 
 7 Identity operators:
 ---------------------
