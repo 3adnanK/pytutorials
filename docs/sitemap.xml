@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://3adnank.github.io/pytutorials/python-operators/</loc>
+    <lastmod>2018-06-12T17:20:08+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://3adnank.github.io/pytutorials/python-data-types-part-one/</loc>
     <lastmod>2018-06-11T15:04:47+00:00</lastmod>
   </url>
@@ -29,13 +34,13 @@
   
   <url>
     <loc>https://3adnank.github.io/pytutorials/post/</loc>
-    <lastmod>2018-06-11T15:04:47+00:00</lastmod>
+    <lastmod>2018-06-12T17:20:08+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://3adnank.github.io/pytutorials/</loc>
-    <lastmod>2018-06-11T15:04:47+00:00</lastmod>
+    <lastmod>2018-06-12T17:20:08+00:00</lastmod>
     <priority>0</priority>
   </url>
   

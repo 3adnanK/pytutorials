@@ -10,7 +10,9 @@ slug: "Python-Data-Types-Part-One"
 In this tutorial you will learn:
 
 1. Numbers
-2. Type conversion
+2. Booleans
+3. NoneType
+4. Type conversion
 
 Introduction:
 -------------
@@ -28,7 +30,7 @@ Python support different type of numbers like int (Integers), float (floating po
 * Integer is a number that is not a fraction, it can be negative or positive number: (23, 65, -5)
 * Floating point is a number that contain floating decimal like: (25.6, 75.0, 55.33, -33.45)
 * Complex number is a number that can be expressed in the form a + bi, in python the i is replaced by j : (23 + 4i).
-You may not use this type unless you have some math problem that use this type. Actually i have never used this type in my code
+You may not use this type unless you have some math problem that uses complex numbers. Actually i have never used this type in my code
 but it is good to know about it in case you need it.
 You can read more about complex number [here](https://en.wikipedia.org/wiki/Complex_number)
 
@@ -104,7 +106,45 @@ print(x, y, z, sep=', ')
 As you see we have printed the number 13 in a three different number systems.<br/>
 You can read more about the different type of number systems [here](https://www.rapidtables.com/math/number/Numeral_system.html).
 
-2 Type conversion:
+2 Booleans:
+-----------
+Boolean type is a True or False type, this type is used in condition statement to decide if a specific part of the code should run or not.<br/>
+
+{{< highlight python "linenos=inline,linenostart=0" >}}
+x = True
+
+y = False
+
+print(x, type(x))
+print(y, type(y))
+
+{{< / highlight >}}
+
+> OUTPUT: True \<class 'bool'\>
+
+> OUTPUT: False \<class 'bool'\>
+
+3 NoneType:
+-----------
+In python we can create a variable that doesn't have any value by using the None keyword, which tells the python interpreter
+that this variable doesn't contain any value.<br/>
+
+{{< highlight python "linenos=inline,linenostart=0" >}}
+x = None
+
+print(x)
+print(type(x))
+
+{{< / highlight >}}
+
+> OUTPUT: 
+
+> OUTPUT: \<class 'NoneType'\>
+
+When you run this code you will see that the first print function will print nothing, this because the '''x''' variable doesn't contain any value.<br/>
+The second print function prints the type of the '''x''' variable which is NoneType.<br/>
+
+4 Type conversion:
 ------------------
 In python we can convert one type of number to another type. Lets see an example :
 
@@ -142,4 +182,32 @@ print(type(z))
 > OUTPUT: \<class 'complex'\>
 
 As you see we have converted int type to float and float to int, using the '''int()''', '''float''' and '''complex''' built-in functions.<br/>
-In part two of this tutorial we will learn more about some other important types like list, tuple and string.<br/>
+
+Now lets try to convert an int,float and None to bool.
+
+{{< highlight python "linenos=inline,linenostart=0" >}}
+
+#convert int and float to bool
+b = bool(5)
+b2 = bool(-3.5)
+b3 = bool(0)
+b4 = bool(None)
+
+print(b, type(b))
+print(b2, type(b2))
+print(b3, type(b3))
+print(b4, type(b4))
+
+{{< / highlight >}}
+
+> OUTPUT: True \<class 'complex'\>
+
+> OUTPUT: True
+
+> OUTPUT: False
+
+> OUTPUT: False
+
+As you see the '''bool()''' built-in function convert any positive or negative number (int or float) to True, but only zero and None return False.
+
+In part two of this tutorial you will learn more about some other important types like list, tuple and string.<br/>

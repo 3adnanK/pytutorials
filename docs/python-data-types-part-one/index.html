@@ -40,7 +40,7 @@
 
     
     <meta name="description" content="In this tutorial you will learn:
- Numbers Type conversion  Introduction: Python data-type is a classification that specifies the type of value a variable has. S" />
+ Numbers Booleans NoneType Type conversion  Introduction: Python data-type is a classification that specifies the type of value" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -103,8 +103,8 @@
     },
     "headline": Python Data Types Part One,
     "name": Python Data Types Part One,
-    "wordCount": 608,
-    "timeRequired": "PT3M",
+    "wordCount": 813,
+    "timeRequired": "PT4M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": en
@@ -207,6 +207,8 @@
 
 <ol>
 <li>Numbers</li>
+<li>Booleans</li>
+<li>NoneType</li>
 <li>Type conversion</li>
 </ol>
 
@@ -227,7 +229,7 @@ the second part will be about some more complex data-types like list and tuple.<
 <li>Integer is a number that is not a fraction, it can be negative or positive number: (23, 65, -5)</li>
 <li>Floating point is a number that contain floating decimal like: (25.6, 75.0, 55.33, -33.45)</li>
 <li>Complex number is a number that can be expressed in the form a + bi, in python the i is replaced by j : (23 + 4i).
-You may not use this type unless you have some math problem that use this type. Actually i have never used this type in my code
+You may not use this type unless you have some math problem that uses complex numbers. Actually i have never used this type in my code
 but it is good to know about it in case you need it.
 You can read more about complex number <a href="https://en.wikipedia.org/wiki/Complex_number">here</a></li>
 </ul>
@@ -320,7 +322,43 @@ In python we can represent these numbers by adding a special prefix.<br/></p>
 <p>As you see we have printed the number 13 in a three different number systems.<br/>
 You can read more about the different type of number systems <a href="https://www.rapidtables.com/math/number/Numeral_system.html">here</a>.</p>
 
-<h2 id="2-type-conversion">2 Type conversion:</h2>
+<h2 id="2-booleans">2 Booleans:</h2>
+
+<p>Boolean type is a True or False type, this type is used in condition statement to decide if a specific part of the code should run or not.<br/></p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>x <span style="color:#f92672">=</span> True
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span>y <span style="color:#f92672">=</span> False
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span><span style="color:#66d9ef">print</span>(x, type(x))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">5</span><span style="color:#66d9ef">print</span>(y, type(y))</code></pre></div>
+
+<blockquote>
+<p>OUTPUT: True &lt;class &lsquo;bool&rsquo;&gt;</p>
+
+<p>OUTPUT: False &lt;class &lsquo;bool&rsquo;&gt;</p>
+</blockquote>
+
+<h2 id="3-nonetype">3 NoneType:</h2>
+
+<p>In python we can create a variable that doesn&rsquo;t have any value by using the None keyword, which tells the python interpreter
+that this variable doesn&rsquo;t contain any value.<br/></p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>x <span style="color:#f92672">=</span> None
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#66d9ef">print</span>(x)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span><span style="color:#66d9ef">print</span>(type(x))</code></pre></div>
+
+<blockquote>
+<p>OUTPUT:</p>
+
+<p>OUTPUT: &lt;class &lsquo;NoneType&rsquo;&gt;</p>
+</blockquote>
+
+<p>When you run this code you will see that the first print function will print nothing, this because the &ldquo;&lsquo;x&rdquo;&rsquo; variable doesn&rsquo;t contain any value.<br/>
+The second print function prints the type of the &ldquo;&lsquo;x&rdquo;&rsquo; variable which is NoneType.<br/></p>
+
+<h2 id="4-type-conversion">4 Type conversion:</h2>
 
 <p>In python we can convert one type of number to another type. Lets see an example :</p>
 
@@ -356,8 +394,34 @@ You can read more about the different type of number systems <a href="https://ww
 <p>OUTPUT: &lt;class &lsquo;complex&rsquo;&gt;</p>
 </blockquote>
 
-<p>As you see we have converted int type to float and float to int, using the &ldquo;&lsquo;int()&rdquo;&rsquo;, &ldquo;&lsquo;float&rdquo;&rsquo; and &ldquo;&lsquo;complex&rdquo;&rsquo; built-in functions.<br/>
-In part two of this tutorial we will learn more about some other important types like list, tuple and string.<br/></p>
+<p>As you see we have converted int type to float and float to int, using the &ldquo;&lsquo;int()&rdquo;&rsquo;, &ldquo;&lsquo;float&rdquo;&rsquo; and &ldquo;&lsquo;complex&rdquo;&rsquo; built-in functions.<br/></p>
+
+<p>Now lets try to convert an int,float and None to bool.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 0</span><span style="color:#75715e">#convert int and float to bool</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span>b <span style="color:#f92672">=</span> bool(<span style="color:#ae81ff">5</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span>b2 <span style="color:#f92672">=</span> bool(<span style="color:#f92672">-</span><span style="color:#ae81ff">3.5</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span>b3 <span style="color:#f92672">=</span> bool(<span style="color:#ae81ff">0</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span>b4 <span style="color:#f92672">=</span> bool(None)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span><span style="color:#66d9ef">print</span>(b, type(b))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span><span style="color:#66d9ef">print</span>(b2, type(b2))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span><span style="color:#66d9ef">print</span>(b3, type(b3))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span><span style="color:#66d9ef">print</span>(b4, type(b4))</code></pre></div>
+
+<blockquote>
+<p>OUTPUT: True &lt;class &lsquo;complex&rsquo;&gt;</p>
+
+<p>OUTPUT: True</p>
+
+<p>OUTPUT: False</p>
+
+<p>OUTPUT: False</p>
+</blockquote>
+
+<p>As you see the &ldquo;&lsquo;bool()&rdquo;&rsquo; built-in function convert any positive or negative number (int or float) to True, but only zero and None return False.</p>
+
+<p>In part two of this tutorial you will learn more about some other important types like list, tuple and string.<br/></p>
 
     </section>
 
@@ -449,6 +513,13 @@ s.setAttribute('data-timestamp', +new Date());
 
 
   <aside class="read-next">
+  
+      <a class="read-next-story" style="no-cover" href="https://3adnank.github.io/pytutorials/python-operators/">
+          <section class="post">
+              <h2>Python Operators</h2>
+              
+          </section>
+      </a>
   
   
       <a class="read-next-story prev" style="no-cover" href="https://3adnank.github.io/pytutorials/multiple-assignment-and-comments/">

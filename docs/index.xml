@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2018</copyright>
-    <lastBuildDate>Mon, 11 Jun 2018 15:04:47 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Jun 2018 17:20:08 +0000</lastBuildDate>
     
 	<atom:link href="https://3adnank.github.io/pytutorials/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python Operators</title>
+      <link>https://3adnank.github.io/pytutorials/python-operators/</link>
+      <pubDate>Tue, 12 Jun 2018 17:20:08 +0000</pubDate>
+      
+      <guid>https://3adnank.github.io/pytutorials/python-operators/</guid>
+      <description>In this tutorial you will learn:
+ Arithmetic operators Assignment operators Comparison operators Logical operators Bitwise operators Membership operators Identity operators  Introduction: Before we jump to the operators lets define what is an operator. An operator is a special symbol that python or any other programming language use to make some arithmetic, assignment or logical computation.
+1 Arithmetic operators: Arithmetic operators are used to perform mathematical operations that we are familliar with, like addition, subtraction, division and multiplication etc.</description>
+    </item>
     
     <item>
       <title>Python Data Types Part One</title>
@@ -19,8 +30,7 @@
       
       <guid>https://3adnank.github.io/pytutorials/python-data-types-part-one/</guid>
       <description>In this tutorial you will learn:
- Numbers Type conversion  Introduction: Python data-type is a classification that specifies the type of value a variable has. Since everything in python is an object, every type in python have his own specific methods and attributes that can be used on this type. (we will discuss more about Ojbects later and see how to create our own data type).
-This tutorial will be devided in two part the first part which is the current tutorial will be about the numbers data-types and the second part will be about some more complex data-types like list and tuple.</description>
+ Numbers Booleans NoneType Type conversion  Introduction: Python data-type is a classification that specifies the type of value a variable has. Since everything in python is an object, every type in python have his own specific methods and attributes that can be used on this type. (we will discuss more about Ojbects later and see how to create our own data type).</description>
     </item>
     
     <item>
