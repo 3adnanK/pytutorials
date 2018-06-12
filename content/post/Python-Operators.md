@@ -359,4 +359,4 @@ print(id(x))
 
 {{< / highlight >}}
 
-This is all for this lecture, I hope you enjoyed it.<br/>
+This is all for this tutorial, I hope you enjoyed it.<br/>
