@@ -26,15 +26,15 @@ make some arithmetic, assignment or logical computation.<br/>
 -----------------------
 Arithmetic operators are used to perform mathematical operations that we are familliar with, like addition, subtraction, division and multiplication etc.
 
-|Operator  |Explanation                                          											                         |
-|----------|-------------------------------------------------------------------------------------------------------------------------|
-|    +     |Addition operator: add two operands (10 + 3) 10 and 3 are the operands  											     |
-|    -     |Subtruction operator: Subtract the right operand from the left  operand    											     |
-|    /     |Division operator: Devide left operand by the right operand (the result of this division is always a float number)       |
-|    *     |Multiplication operator: Multiply two operands                                                                           |
-|    //    |Floor division operator: Devide left operand by the right operand (the result of this division is always an int number)  |
-|    %     |Modulus operator: Devide left operand by the right operand (the result is the remainder of the division)                 |
-|    **    |Exponent operator: Perfoms exponential calculation by rasing the left operand to the power of the right operand          |
+|Operator       |Explanation                                          											                         |
+|---------------|-------------------------------------------------------------------------------------------------------------------------|
+|    +          |Addition operator: add two operands (10 + 3) 10 and 3 are the operands  											     |
+|    -          |Subtruction operator: Subtract the right operand from the left  operand    											     |
+|    /          |Division operator: Devide left operand by the right operand (the result of this division is always a float number)       |
+|    *          |Multiplication operator: Multiply two operands                                                                           |
+|    //         |Floor division operator: Devide left operand by the right operand (the result of this division is always an int number)  |
+|    %          |Modulus operator: Devide left operand by the right operand (the result is the remainder of the division)                 |
+|    **         |Exponent operator: Perfoms exponential calculation by rasing the left operand to the power of the right operand          |
 
 Lets see some examples:
 
