@@ -1,4 +1,4 @@
-baseURL = "https://readersblade.com"
+baseURL = "https://3adnank.github.io/pytutorials/"
 languageCode = "en-us"
 title = "PyTutorials"
 publishDir = "docs"
