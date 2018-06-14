@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Python Data Types Part Two"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@adnankandar"/>
+
+
+
+  	<meta property="og:title" content="Python Data Types Part Two &middot; PyTutorials" />
+  	<meta property="og:site_name" content="PyTutorials" />
+  	<meta property="og:url" content="https://readersblade.com/python-data-types-part-two/" />
+
+    
+        
+            <meta property="og:image" content="/images/cover.jpg"/>
+        
+    
+
+    
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2018-06-14T01:12:23Z" />
+
+    
+    
+
+    <title>Python Data Types Part Two &middot; PyTutorials</title>
+
+    
+    <meta name="description" content="In this tutorial you will learn:
+ Strings List Tuple Set Dictionary  1 Strings: We have already been using this type in prevoius tutorials, this data type is ac" />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://readersblade.com/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="https://readersblade.com/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="https://readersblade.com/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="https://readersblade.com/css/nav.css" />
+
+    
+
+    
+
+    
+      
+          <link href="https://readersblade.com/index.xml" rel="alternate" type="application/rss+xml" title="PyTutorials" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.41" />
+
+    <link rel="canonical" href="https://readersblade.com/python-data-types-part-two/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": ,
+        "logo": https://readersblade.comhttps://readersblade.com/images/logo.png
+    },
+    "author": {
+        "@type": "Person",
+        "name": ,
+        
+        "image": {
+            "@type": "ImageObject",
+            "url": https://readersblade.comhttps://readersblade.com/images/logo.png,
+            "width": 250,
+            "height": 250
+        }, 
+        
+        "url": https://www.logorain.com,
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ]
+    },
+    "headline": Python Data Types Part Two,
+    "name": Python Data Types Part Two,
+    "wordCount": 1040,
+    "timeRequired": "PT5M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": https://readersblade.com/python-data-types-part-two/,
+    "datePublished": 2018-06-14T01:12Z,
+    "dateModified": 2018-06-14T01:12Z,
+    
+    
+    "description": ,
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": https://readersblade.com/python-data-types-part-two/
+    }
+}
+    </script>
+    
+
+
+    
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-120319729-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-8584595898264421",
+    enable_page_level_ads: true
+  });
+</script>
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="https://readersblade.com/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="https://readersblade.com"><img src="https://readersblade.com/images/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button icon-feed" href="https://readersblade.com/index.xml" >&nbsp;&nbsp;Subscribe</a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Python Data Types Part Two</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2018-06-14T01:12:23Z">
+            Jun 14, 2018
+          </time>
+        
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      
+
+<p>In this tutorial you will learn:</p>
+
+<ol>
+<li>Strings</li>
+<li>List</li>
+<li>Tuple</li>
+<li>Set</li>
+<li>Dictionary</li>
+</ol>
+
+<h2 id="1-strings">1 Strings:</h2>
+
+<p>We have already been using this type in prevoius tutorials, this data type is actualy a sequence of characters enclosed within single (&ldquo;) or double quotes (&rdquo;&ldquo;).<br/>
+Strings (called &ldquo;str&rdquo; in python) are an immutable sequence which means we can&rsquo;t change any of the charachters in the sequence.<br/>
+Lets make this more clear to you with an example:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Itachi&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#75715e">#OUTPUT: I t a c h i</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span><span style="color:#66d9ef">print</span>(name[<span style="color:#ae81ff">0</span>], name[<span style="color:#ae81ff">1</span>], name[<span style="color:#ae81ff">2</span>], name[<span style="color:#ae81ff">3</span>], name[<span style="color:#ae81ff">4</span>], name[<span style="color:#ae81ff">5</span>])
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">5</span><span style="color:#75715e">#OUTPUT: TypeError &#39;str&#39; object doesn&#39;t support items assignment </span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">6</span>name[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;K&#39;</span></code></pre></div>
+
+<p>Like we said before strings are just a sequence of charachters each charachter has its own index number, the index numbers start with zero, this mean that the first charater
+in our sequence is at the index 0 and the second character is at the index 1 and so on.<br/>
+To access any of these charachters we use the indexing method by typing the variable name that contain the string value followed by an opend square bracket &lsquo;[&rsquo; and a closed square bracket &lsquo;]&rsquo;
+and in between these brackets we put the index number of the charachter that we want to access it (variable_name[index_number]).<br/>
+In the last statment we have tried to assign the value &lsquo;K&rsquo; to the first index which is 0, but when we run the code we get a TypeError telling us that &lsquo;str&rsquo; doesn&rsquo;t support
+items assignment, because the strings are immutable.<br/>
+Now lets see another example:</p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span><span style="color:#75715e">#OUTPUT: SyntaxError</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;I can&#39;</span>t stop coding<span style="color:#e6db74">&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#e6db74">#Solutions</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#e6db74">#var = &#34;I can&#39;</span>t stop coding<span style="color:#e6db74">&#34;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">5</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#e6db74">#var = &#39;I can</span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">t stop coding&#39;</span></code></pre></div>
+When you run this code you will get a SyntaxError caused by the single quote in (can&rsquo;t).<br/>
+When you strat a string with a single quote the python interpreter will search for the second single quote which define the end of the string,
+and in our case the interpreter has found the single quote before the end of our string which caused the syntax error.<br/>
+To avoid this error we can use two methods the first is to use double quotes when we want to use single quote in our charachters sequence or
+we use the single quote when we want to use double quotes in our charachters sequence.<br/>
+The second method is to use the backslash symbol (\) to escape any single or double quotes used in our charachters sequence.<br/></p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 0</span><span style="color:#e6db74">&#39;&#39;&#39;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span><span style="color:#e6db74">If you start your string with single quote you escape only the single quotes
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span><span style="color:#e6db74">that are presented in your string.
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span><span style="color:#e6db74">&#39;&#39;&#39;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span>var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;text that contain both &#34;double quotes&#34; and </span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">single quotes</span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">&#39;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span><span style="color:#e6db74">&#39;&#39;&#39;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span><span style="color:#e6db74">If you start your string with double quotes you escape only the double quotes
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span><span style="color:#e6db74">that are presented in your string.
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span><span style="color:#e6db74">&#39;&#39;&#39;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span>var1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;text that contain both </span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">double quotes</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74"> and &#39;single quotes&#39;&#34;</span></code></pre></div>
+
+<p>You can use the str() built-in function to convert a number to str.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>var <span style="color:#f92672">=</span> <span style="color:#ae81ff">45</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#75715e">#OUTPUT: &lt;class &#39;int&#39;&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span><span style="color:#66d9ef">print</span>(type(var))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">5</span>var <span style="color:#f92672">=</span> str(var)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">6</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">7</span><span style="color:#75715e">#OUTPUT: &lt;class &#39;str&#39;&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">8</span><span style="color:#66d9ef">print</span>(type(var))</code></pre></div>
+
+<p>You will learn more about strings in the next tutorial.</p>
+
+<h2 id="2-list">2 List:</h2>
+
+<p>List is a mutable sequence of items, which means that we can change the items in the list.<br/>
+List items can be all of the same type or different types.<br/>
+List items are enclosed within brackets [].</p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 0</span>var <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5.5</span>, <span style="color:#ae81ff">7.3</span>, <span style="color:#e6db74">&#39;hi&#39;</span>]
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span><span style="color:#75715e">#OUTPUT: &lt;class &#39;list&#39;&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span><span style="color:#66d9ef">print</span>(type(var))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span><span style="color:#75715e">#OUTPUT: 1 5.5 hi</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span><span style="color:#66d9ef">print</span>(var[<span style="color:#ae81ff">0</span>], var[<span style="color:#ae81ff">3</span>], var[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>])
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span><span style="color:#75715e">#Replace list items</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span>var[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">44</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span><span style="color:#75715e">#OUTPUT: 44</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12</span><span style="color:#66d9ef">print</span>(var[<span style="color:#ae81ff">0</span>])</code></pre></div>
+In this example we have created a list that contain some items with different types int, float and str.<br/>
+To access these items we use the same indexing method that we have used with strings.<br/>
+The new syntax here is &ldquo;var[-1]&ldquo;, the -1 means the last item in the sequence, we can use the negative numbers in the indexing method
+to access the items from the right side of the sequence: (-2 means the second item from the right and -3 is the third item from the right and so on &hellip;).<br/></p>
+
+<h2 id="3-tuple">3 Tuple:</h2>
+
+<p>Tuple is same as list, both are an ordered sequence of items but the difference between tuple and list is that tuple is immutable which means that we can&rsquo;t modify its content,
+and the items are enclosed within parentheses &lsquo;()&rsquo;.<br/></p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>var <span style="color:#f92672">=</span> (<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5.5</span>, <span style="color:#ae81ff">7.3</span>, <span style="color:#e6db74">&#39;hi&#39;</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#75715e">#OUTPUT: &lt;class &#39;tuple&#39;&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span><span style="color:#66d9ef">print</span>(type(var))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">5</span><span style="color:#75715e">#OUTPUT: 1 5.5 hi</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">6</span><span style="color:#66d9ef">print</span>(var[<span style="color:#ae81ff">0</span>], var[<span style="color:#ae81ff">3</span>], var[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>])</code></pre></div>
+As you see we access the tuple&rsquo;s items using the same method that we have used in both list and str.<br/>
+Note: To create a tuple that contain only one item you need to add comma after the item: (1,), if you don&rsquo;t do that the interpreter
+will consider it as an integer assginment not a tuple.<br/></p>
+
+<h2 id="4-set">4 Set:</h2>
+
+<p>Set is an unordered collection of unique items enclosed within curly braces &lsquo;{}&rsquo;, this mean that we can&rsquo;t use the indexing method to access the items and all the items are uniques,
+that mean no repeated items.<br/></p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 0</span>var <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#39;hi&#39;</span>, <span style="color:#e6db74">&#39;hi&#39;</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span><span style="color:#75715e">#OUTPUT: &lt;class &#39;set&#39;&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span><span style="color:#66d9ef">print</span>(type(var))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span><span style="color:#75715e">#OUTPUT: {1, 2, 3, 4, 5, &#39;hi&#39;}</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span><span style="color:#66d9ef">print</span>(var)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span><span style="color:#75715e">#OUTPUT: TypeError</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span><span style="color:#66d9ef">print</span>(var[<span style="color:#ae81ff">0</span>])</code></pre></div>
+When you run this code, the second print function &ldquo;print(var)&rdquo; will print only unique items all the repeated items are removed.<br/>
+When we try to access the first item using the indexing method we get an error, because set doesn&rsquo;t support the indexing method.<br/>
+Note: When you print your set, the result won&rsquo;t be always ordered like list and tuple.<br/>
+You will learn more about sets in an upcoming tutorial.<br/></p>
+
+<h2 id="5-dictionary">5 Dictionary:</h2>
+
+<p>Dictionary is an unordered collection of Key-Value pairs enclosed within curly braces &lsquo;{}&rsquo; and each Key-Value is seperated by colon &lsquo;:&lsquo;.<br/>
+The key can be any immutable type like tuple, string and numbers.<br/>
+The value can be any type.<br/></p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>var <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;key&#39;</span>:<span style="color:#e6db74">&#39;value&#39;</span>, <span style="color:#e6db74">&#39;banana&#39;</span>:<span style="color:#ae81ff">35</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#75715e">#OUTPUT: &lt;class &#39;dict&#39;&gt;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span><span style="color:#66d9ef">print</span>(type(var))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">5</span><span style="color:#75715e">#OUTPUT: 35</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">6</span><span style="color:#66d9ef">print</span>(var[<span style="color:#e6db74">&#39;banana&#39;</span>])</code></pre></div>
+As you see in the first statement we have created our dictionary then we have printed the type of our variable, and finally we have printed the value of the key &lsquo;banana&rsquo;,
+this is how we access the values in our dictionary.<br/></p>
+
+<p>In an upcoming tutorials you will learn more about these types (string, list, set, dict).</p>
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+
+
+
+
+
+
+
+
+<figure class="author-image">
+    <a class="img" href="https://readersblade.com" style="background-image: url(/images/logo.png)"><span class="hidden">Adnan's Picture</span></a>
+</figure>
+
+
+<section class="author">
+  <h4><a href="https://readersblade.com">Adnan</a></h4>
+  
+  <p>Read <a href="https://readersblade.com">more posts</a> by this author.</p>
+  
+  <div class="author-meta">
+    
+    <span class="author-link icon-link"><a href="https://www.logorain.com">https://www.logorain.com</a></span>
+  </div>
+</section>
+
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Python%20Data%20Types%20Part%20Two&nbsp;-&nbsp;PyTutorials&amp;url=https%3a%2f%2freadersblade.com%2fpython-data-types-part-two%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2freadersblade.com%2fpython-data-types-part-two%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2freadersblade.com%2fpython-data-types-part-two%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+var disqus_config = function () {
+this.page.url = "https:\/\/readersblade.com\/python-data-types-part-two\/";  
+this.page.identifier = "https:\/\/readersblade.com\/python-data-types-part-two\/"; 
+};
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://https-3adnank-github-io-pytutorials.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+
+
+  </footer>
+</article>
+
+</main>
+
+
+  <aside class="read-next">
+  
+  
+      <a class="read-next-story prev" style="no-cover" href="https://readersblade.com/python-operators/">
+          <section class="post">
+              <h2>Python Operators</h2>
+          </section>
+      </a>
+  
+</aside>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">PyTutorials</a> All rights reserved - 2018</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="https://readersblade.com/js/jquery.js"></script>
+    <script type="text/javascript" src="https://readersblade.com/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://readersblade.com/js/index.js"></script>
+    
+</body>
+</html>
+
