@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Python Strings"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@adnankandar"/>
+
+
+
+  	<meta property="og:title" content="Python Strings &middot; PyTutorials" />
+  	<meta property="og:site_name" content="PyTutorials" />
+  	<meta property="og:url" content="https://readersblade.com/python-strings/" />
+
+    
+        
+            <meta property="og:image" content="/images/cover.jpg"/>
+        
+    
+
+    
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2018-06-20T18:20:55Z" />
+
+    
+    
+
+    <title>Python Strings &middot; PyTutorials</title>
+
+    
+    <meta name="description" content="In this tutorial you will learn:
+ String indexing and slicing How to count the number of characters using len() String operations Some useful string methods  1 " />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://readersblade.com/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="https://readersblade.com/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="https://readersblade.com/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="https://readersblade.com/css/nav.css" />
+
+    
+
+    
+
+    
+      
+          <link href="https://readersblade.com/index.xml" rel="alternate" type="application/rss+xml" title="PyTutorials" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.41" />
+
+    <link rel="canonical" href="https://readersblade.com/python-strings/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": ,
+        "logo": https://readersblade.comhttps://readersblade.com/images/logo.png
+    },
+    "author": {
+        "@type": "Person",
+        "name": ,
+        
+        "image": {
+            "@type": "ImageObject",
+            "url": https://readersblade.comhttps://readersblade.com/images/logo.png,
+            "width": 250,
+            "height": 250
+        }, 
+        
+        "url": https://www.logorain.com,
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ]
+    },
+    "headline": Python Strings,
+    "name": Python Strings,
+    "wordCount": 1259,
+    "timeRequired": "PT6M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": https://readersblade.com/python-strings/,
+    "datePublished": 2018-06-20T18:20Z,
+    "dateModified": 2018-06-20T18:20Z,
+    
+    
+    "description": ,
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": https://readersblade.com/python-strings/
+    }
+}
+    </script>
+    
+
+
+    
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-120319729-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="https://readersblade.com/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="https://readersblade.com"><img src="https://readersblade.com/images/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button icon-feed" href="https://readersblade.com/index.xml" >&nbsp;&nbsp;Subscribe</a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Python Strings</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2018-06-20T18:20:55Z">
+            Jun 20, 2018
+          </time>
+        
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      
+
+<p>In this tutorial you will learn:</p>
+
+<ol>
+<li>String indexing and slicing</li>
+<li>How to count the number of characters using len()</li>
+<li>String operations</li>
+<li>Some useful string methods</li>
+</ol>
+
+<h2 id="1-string-indexing-and-slicing">1 String indexing and slicing:</h2>
+
+<p>In the prevous tutorial (Python Data Types Part Two), we have seen how to access any character in a string using indexing method:</p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello World&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#75715e">#OUTPUT: H o</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span><span style="color:#66d9ef">print</span>(var[<span style="color:#ae81ff">0</span>], var[<span style="color:#ae81ff">4</span>])</code></pre></div>
+The index numbering in python and some other programming language start from zero (0).<br/>
+Python has a very powerfull feature that let you slice any ordered sequence (string, list, tuple) called slicing.<br/>
+Lets see an example:</p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 0</span>var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello World&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span><span style="color:#75715e">#OUTPUT: Hello</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span><span style="color:#66d9ef">print</span>(var[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">5</span>])
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span><span style="color:#75715e">#OUTPUT: Hello</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span><span style="color:#66d9ef">print</span>(var[:<span style="color:#ae81ff">5</span>])
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span><span style="color:#75715e">#OUTPUT: World</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span><span style="color:#66d9ef">print</span>(var[<span style="color:#ae81ff">6</span>:])</code></pre></div>
+In this example we slice our string to two parts, the first is &lsquo;Hello&rsquo; and the second is &lsquo;World&rsquo;.<br/>
+To use the slicing method we add two square brackets like the indexing method then we define the starting index, the index that we want to
+start slicing from it if we don&rsquo;t define anything by default python will start from index zero &lsquo;0&rsquo;, then we add colon and the end index, which define
+the index where we want to stop slicing, the character at the &lsquo;stop index&rsquo; will not be included in the sliced result the slicing will stop just before
+that index, if no stop index is defined python will continue to the end of the sequence.<br/>
+We can also add a third number to our slicing method that allows us to set how the index of the sequence will be incremented.<br/>
+Lets see an example to understand this clearly.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello World&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#75715e">#jump one character</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span><span style="color:#75715e">#OUTPUT:HloWrd</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span><span style="color:#66d9ef">print</span>(var[::<span style="color:#ae81ff">2</span>])</code></pre></div>
+
+<p>As you see to jump one character we set the step number to two, if we type one (1) instead of two (2) we will get the whole sequence: &lsquo;Hello World&rsquo;.<br/>
+So why 2 make us jump one character ? :<br/>
+As you know 0 is the first index and to jump one character this means the next index after zero should be 2 because we want to jump 1 character,
+now the next index after two should be 4 and the next is 6 and so on until the end of the sequence, if you notice each time we add 2 to
+the previous index and this is how the number 2 in the step number means, it defines how much to add to the previous index to jump to the next index.<br/>
+We can also use negative numbers for the step part:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello World&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#75715e">#OUTPUT: dlroW olleH</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span><span style="color:#66d9ef">print</span>(var[::<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>])</code></pre></div>
+
+<h2 id="2-how-to-count-the-number-of-characters-using-len">2 How to count the number of characters using len():</h2>
+
+<p>Python has a built-in function called len() this function take a sequence and return the length of it.</p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello World&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#75715e">#OUTPUT: 11</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span><span style="color:#66d9ef">print</span>(len(var))</code></pre></div>
+When you run this code the len() function will return an int number equale to 11 which means that our variable &ldquo;var&rdquo; contain 11 character: 10 alphabetical characters and 1 is
+the space between the two word.<br/></p>
+
+<h2 id="3-string-operations">3 String Operations:</h2>
+
+<p>We can apply some arithmetic operators to manipulate a string object:<br/>
+For example to concatenate two ore more strings objects we can use the addition &lsquo;+&rsquo; operator:<br/></p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>var1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello &#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>var2 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;World&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span>var3 <span style="color:#f92672">=</span> var1 <span style="color:#f92672">+</span> var2
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">5</span><span style="color:#75715e">#OUTPUT: Hello World</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">6</span><span style="color:#66d9ef">print</span>(var3)</code></pre></div>
+As you see we have used the addition operator &lsquo;+&rsquo; to concatenate the two str object var1 and var2.<br/>
+We can also use the multiplication operator &lsquo;<em>&rsquo; to multiply the string.<br/>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello &#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#75715e">#OUTPUT: Hello Hello Hello</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span><span style="color:#66d9ef">print</span>(var <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>)</code></pre></div>
+In this example we have repeated the word &lsquo;Hello&rsquo; three times by multiplying our str object by 3 using the multiplication operator &lsquo;</em>&rsquo;.<br/>
+We can also check if a sub string exists within a string or not by using the membership operator &lsquo;in&rsquo;:<br/></p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Apple&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#75715e">#OUTPUT: True</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;p&#39;</span> <span style="color:#f92672">in</span> var)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">5</span><span style="color:#75715e">#OUTPUT: False</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">6</span><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;s&#39;</span> <span style="color:#f92672">in</span> var)</code></pre></div>
+
+<h2 id="4-some-useful-string-methods">4 Some useful string methods:</h2>
+
+<p>In this section you learn some useful method that are part of the str object:</p>
+
+<h4 id="format">format:</h4>
+
+<p>Python str object has a method called format() that allows us to format our string.<br/>
+Lets see an example:</p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 0</span>var1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;abc&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span>var2 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;def&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span><span style="color:#75715e">#OUTPUT: var1 = abc and var2 = def</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;var1 = {} and var2 = {}&#34;</span><span style="color:#f92672">.</span>format(var1, var2))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span><span style="color:#75715e">#OUTPUT: var1 = abc and var2 = def</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;var1 = {0} and var2 = {1}&#34;</span><span style="color:#f92672">.</span>format(var1, var2))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span><span style="color:#75715e">#OUTPUT: var2 = def and var1 = abc</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;var2 = {1} and var1 = {0}&#34;</span><span style="color:#f92672">.</span>format(var1, var2))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12</span><span style="color:#75715e">#OUTPUT: var1 = abc and var2 = def</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13</span><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;var1 = {variable_one} and var2 = {variable_two}&#34;</span><span style="color:#f92672">.</span>format(variable_one<span style="color:#f92672">=</span>var1, variable_two<span style="color:#f92672">=</span>var2))</code></pre></div>
+As you see we can call format() on our string and pass to it the variables or the values that we want to be added to our string.<br/>
+The format() method will look for any opened and closed curly braces &lsquo;{}&rsquo; and replace it with the specific value based on the order if no number or label has been set in
+between the curly braces.<br/></p>
+
+<h3 id="replace">replace:</h3>
+
+<p>As you know the str object is immutable that mean we can&rsquo;t change or delete any character in the characters sequence using the indexing method, but the str object has method called
+replace() that takes three arguments:</p>
+
+<ol>
+<li>old: the character that we want to replace.</li>
+<li>new: the character that we want to be replacing the old one.</li>
+<li>count: this is an optional argument, it is the number of characters that we want to be replaced.</li>
+</ol>
+
+<p>This method will create a new modified str boject and return it, it won&rsquo;t change the original str object.<br/></p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Apple&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#75715e">#OUTPUT: Akkle</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span><span style="color:#66d9ef">print</span>(var<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39;p&#39;</span>, <span style="color:#e6db74">&#39;k&#39;</span>))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">5</span><span style="color:#75715e">#OUTPUT: Akple</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">6</span><span style="color:#66d9ef">print</span>(var<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39;p&#39;</span>, <span style="color:#e6db74">&#39;k&#39;</span>, <span style="color:#ae81ff">1</span>))</code></pre></div>
+In this example we have called the replace method two times:<br/>
+In the first call we have set the character &lsquo;p&rsquo; to be replaced by the character &lsquo;k&rsquo; and ignored the third argument (count) and the result was that all the &lsquo;p&rsquo; characters
+has been replaced by &lsquo;k&rsquo;.<br/>
+In the second call we have set the number &lsquo;1&rsquo; as third argument in the replace method which means that we want only one &lsquo;p&rsquo; character to be replaced.<br/></p>
+
+<h3 id="lower-and-upper">lower and upper:</h3>
+
+<p>Python str object has a method called lower() that convert all uppercase characters to lowercase, and a method called upper() that convert all lowercase characters to
+uppercase:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;HeLLo WoRld&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#75715e">#OUTPUT: hello world</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span><span style="color:#66d9ef">print</span>(var<span style="color:#f92672">.</span>lower())</code></pre></div>
+
+<h3 id="isalpha">isalpha:</h3>
+
+<p>This method is used to check if the str object is a sequence of only alphabetical characters, it will return True if only alphabetical characters are in the sequence and False
+if not.</p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;MyUsername&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>var2 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello World&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span><span style="color:#75715e">#OUTPUT: True</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span><span style="color:#66d9ef">print</span>(var<span style="color:#f92672">.</span>isalpha())
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">5</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">6</span><span style="color:#75715e">#OUTPUT: False</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">7</span><span style="color:#66d9ef">print</span>(var<span style="color:#f92672">.</span>isalpha())</code></pre></div>
+In this example we have called the &lsquo;isalpha()&rsquo; method on two different variables, in the first call the method returns True, because our &lsquo;var&rsquo; variable contain only alphabetical
+characters, but in the second call it returns False due to the space character in between &lsquo;Hello&rsquo; and &lsquo;World&rsquo; which is not part of the alphabetical characters.<br/></p>
+
+<h3 id="isdigit">isdigit:</h3>
+
+<p>This method is similar to our previous method, but this time this method will check if the str objects is a sequence of digits.<br/></p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>var1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;variable1&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>phone_number <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;4452133684&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#75715e">#OUTPUT: Fale</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span><span style="color:#66d9ef">print</span>(var<span style="color:#f92672">.</span>isdigit(var1))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">5</span><span style="color:#75715e">#OUTPUT: True</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">6</span><span style="color:#66d9ef">print</span>(var<span style="color:#f92672">.</span>isdigit(phone_number))</code></pre></div>
+
+<h3 id="isalnum">isalnum:</h3>
+
+<p>This method is the combination of the two previous methods &lsquo;isalpha&rsquo; and &lsquo;isdigit&rsquo;, this will return True if the str object contain only alphabetical characters or only digits
+or both at the same time.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span><span style="color:#75715e">#OUTPUT: True</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Hello&#34;</span><span style="color:#f92672">.</span>isalnum())
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span><span style="color:#75715e">#OUTPUT: True</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;2455&#34;</span><span style="color:#f92672">.</span>isalnum())
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">5</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">6</span><span style="color:#75715e">#OUTPUT: True</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">7</span><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Hello4452&#34;</span><span style="color:#f92672">.</span>isalnum())</code></pre></div>
+
+<p>You can read more about str methods that can be very useful for you: <a href="https://docs.python.org/3/library/stdtypes.html#index-31">Python Docs</a>.</p>
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+
+
+
+
+
+
+
+
+<figure class="author-image">
+    <a class="img" href="https://readersblade.com" style="background-image: url(/images/logo.png)"><span class="hidden">Adnan's Picture</span></a>
+</figure>
+
+
+<section class="author">
+  <h4><a href="https://readersblade.com">Adnan</a></h4>
+  
+  <p>Read <a href="https://readersblade.com">more posts</a> by this author.</p>
+  
+  <div class="author-meta">
+    
+    <span class="author-link icon-link"><a href="https://www.logorain.com">https://www.logorain.com</a></span>
+  </div>
+</section>
+
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Python%20Strings&nbsp;-&nbsp;PyTutorials&amp;url=https%3a%2f%2freadersblade.com%2fpython-strings%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2freadersblade.com%2fpython-strings%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2freadersblade.com%2fpython-strings%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+var disqus_config = function () {
+this.page.url = "https:\/\/readersblade.com\/python-strings\/";  
+this.page.identifier = "https:\/\/readersblade.com\/python-strings\/"; 
+};
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://https-3adnank-github-io-pytutorials.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+
+
+  </footer>
+</article>
+
+</main>
+
+
+  <aside class="read-next">
+  
+  
+      <a class="read-next-story prev" style="no-cover" href="https://readersblade.com/python-data-types-part-two/">
+          <section class="post">
+              <h2>Python Data Types Part Two</h2>
+          </section>
+      </a>
+  
+</aside>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">PyTutorials</a> All rights reserved - 2018</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="https://readersblade.com/js/jquery.js"></script>
+    <script type="text/javascript" src="https://readersblade.com/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://readersblade.com/js/index.js"></script>
+    
+</body>
+</html>
+

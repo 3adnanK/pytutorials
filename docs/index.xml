@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2018</copyright>
-    <lastBuildDate>Thu, 14 Jun 2018 01:12:23 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Jun 2018 18:20:55 +0000</lastBuildDate>
     
 	<atom:link href="https://readersblade.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python Strings</title>
+      <link>https://readersblade.com/python-strings/</link>
+      <pubDate>Wed, 20 Jun 2018 18:20:55 +0000</pubDate>
+      
+      <guid>https://readersblade.com/python-strings/</guid>
+      <description>In this tutorial you will learn:
+ String indexing and slicing How to count the number of characters using len() String operations Some useful string methods  1 String indexing and slicing: In the prevous tutorial (Python Data Types Part Two), we have seen how to access any character in a string using indexing method:
+0var = &amp;#34;Hello World&amp;#34; 1 2#OUTPUT: H o 3print(var[0], var[4]) The index numbering in python and some other programming language start from zero (0).</description>
+    </item>
     
     <item>
       <title>Python Data Types Part Two</title>
