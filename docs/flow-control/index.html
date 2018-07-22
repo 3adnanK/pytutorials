@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Flow Control"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@adnankandar"/>
+
+
+
+  	<meta property="og:title" content="Flow Control &middot; PyTutorials" />
+  	<meta property="og:site_name" content="PyTutorials" />
+  	<meta property="og:url" content="https://readersblade.com/flow-control/" />
+
+    
+        
+            <meta property="og:image" content="/images/cover.jpg"/>
+        
+    
+
+    
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2018-07-22T12:12:30Z" />
+
+    
+    
+
+    <title>Flow Control &middot; PyTutorials</title>
+
+    
+    <meta name="description" content="In this tutorial you will learn:
+ Python if, elif and else Statement Python for Loop Python while Loop Python break and continue Statement  1 Python if, elif an" />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://readersblade.com/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="https://readersblade.com/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="https://readersblade.com/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="https://readersblade.com/css/nav.css" />
+
+    
+
+    
+
+    
+      
+          <link href="https://readersblade.com/index.xml" rel="alternate" type="application/rss+xml" title="PyTutorials" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.41" />
+
+    <link rel="canonical" href="https://readersblade.com/flow-control/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": ,
+        "logo": https://readersblade.comhttps://readersblade.com/images/logo.png
+    },
+    "author": {
+        "@type": "Person",
+        "name": ,
+        
+        "image": {
+            "@type": "ImageObject",
+            "url": https://readersblade.comhttps://readersblade.com/images/logo.png,
+            "width": 250,
+            "height": 250
+        }, 
+        
+        "url": https://www.logorain.com,
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ]
+    },
+    "headline": Flow Control,
+    "name": Flow Control,
+    "wordCount": 1592,
+    "timeRequired": "PT8M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": https://readersblade.com/flow-control/,
+    "datePublished": 2018-07-22T12:12Z,
+    "dateModified": 2018-07-22T12:12Z,
+    
+    
+    "description": ,
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": https://readersblade.com/flow-control/
+    }
+}
+    </script>
+    
+
+
+    
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-120319729-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="https://readersblade.com/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="https://readersblade.com"><img src="https://readersblade.com/images/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button icon-feed" href="https://readersblade.com/index.xml" >&nbsp;&nbsp;Subscribe</a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Flow Control</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2018-07-22T12:12:30Z">
+            Jul 22, 2018
+          </time>
+        
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      
+
+<p>In this tutorial you will learn:</p>
+
+<ol>
+<li>Python if, elif and else Statement</li>
+<li>Python for Loop</li>
+<li>Python while Loop</li>
+<li>Python break and continue Statement</li>
+</ol>
+
+<h2 id="1-python-if-elif-and-else-statement">1 Python if, elif and else Statement:</h2>
+
+<p>These statements are used when we want to make some decisions in our program to run some codes for a specific condition.
+The if statement will first take a test expression and will run the code only if the result of the test expression is True.
+Lets see an example on that:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>user_age <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#39;Please enter you age: &#39;</span>))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#66d9ef">if</span> user_age <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">18</span>:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span>    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;You are an adult&#34;</span>)</code></pre></div>
+
+<p>As you see we have created a variable called &lsquo;user_age&rsquo; that will contain the user age after asking him about his age, then we used the if statement followed by a test expression
+that check if the user_age is greater than or equal to 18.
+If the test expression (user_age &gt;= 18) is True then the code inside our if body will be executed and print &lsquo;You are an adult&rsquo;, but if the test expression is False the code inside
+the if body will not be executed.
+Try to run this code and enter different age and see the result.<br/></p>
+
+<p>If you run the previous code and enter an age that is less than 18 nothing will happen and the program will end, which will looks wierd for the user when he enter his age,
+what we want to do now is to add another message that will be printed only when the user is less than 18.
+To do that we can use another if statement or the else statement.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>user_age <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#39;Please enter you age: &#39;</span>))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#66d9ef">if</span> user_age <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">18</span>:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span>    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;You are an adult&#34;</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">5</span><span style="color:#66d9ef">if</span> user_age <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">18</span>:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">6</span>    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;You are a minor&#34;</span>)</code></pre></div>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>user_age <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#39;Please enter you age: &#39;</span>))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#66d9ef">if</span> user_age <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">18</span>:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span>    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;You are an adult&#34;</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span><span style="color:#66d9ef">else</span>:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">5</span>    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;You are a minor&#34;</span>)</code></pre></div>
+
+<p>As you see here when you run the code in both code blocks you will get the same result if you eneter an age less than or greater than 18.
+But in the first code block we will first check if the age is greater or equal to 18, if the result is False it will jump to the next if statement and check
+if the user_age is less than 18, so as you see the program has performed two check test the first is (user_age &gt;= 18) and the second is (user_age &lt; 18).<br/>
+Now lets see the second code block, we first ask the user his age then we apply a test expression and check if it&rsquo;s True or False, if True the message &ldquo;You are adult&rdquo;
+will be executed but if it&rsquo;s False automaticaly the message &ldquo;You are a minor&rdquo; will be executed and no second check will be run.<br/></p>
+
+<p>Now lets say we want to add another condition that check if the user age is greater than or equal to 13 and print to the user a message that tells him that he is a teenager.<br/>
+To do that we will add the &lsquo;elif&rsquo; statement to our previous code.<br/></p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>user_age <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#39;Please enter you age: &#39;</span>))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#66d9ef">if</span> user_age <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">18</span>:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span>    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;You are an adult&#34;</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span><span style="color:#66d9ef">elif</span> user_age <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">13</span>:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">5</span>    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;You are a teenager&#34;</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">6</span><span style="color:#66d9ef">else</span>:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">7</span>    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;You are a minor&#34;</span>)</code></pre></div>
+
+<p>When your run this code and enter your age the fist condition will check if the user_age is greater or equal to 18 and run the code inside the if body if it&rsquo;s True, nothing new until now,
+if the first test expression is False the second statement (elif) which combine the two statement else and if (else if) will run and check if the &lsquo;user_age&rsquo; is greater than or equal to 13 if
+it&rsquo;s True the message &ldquo;You are a teenager&rdquo; will be printed out, if False the message inside the &lsquo;else&rsquo; body will be printed out.<br/>
+So lets see clearly what is the diffence between using multiple &lsquo;if&rsquo; statement and &lsquo;elif and else&rsquo; statement.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span>user_age <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#39;Please enter you age: &#39;</span>))
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#66d9ef">if</span> user_age <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">18</span>:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span>    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;You are an adult&#34;</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span><span style="color:#66d9ef">if</span> user_age <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">13</span>:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">5</span>    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;You are a teenager&#34;</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">6</span><span style="color:#66d9ef">if</span> user_age <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">13</span>:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">7</span>    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;You are a minor&#34;</span>)</code></pre></div>
+
+<p>When you run this code and enter 35 for the user_age the output will be:<br/>
+&gt;&gt;&lsquo;You are an adult&rsquo;<br/>
+&gt;&gt;&lsquo;You are a teenager&rsquo;<br/></p>
+
+<p>Ooops that&rsquo;s not what we want to print as a message for the user, because he can&rsquo;t be adult and teenager at the same time.<br/>
+What caused this error here is the multiple if statement, as i mentioned before when you add multiple if statement the program will pass through them one by one.
+So in this example after geting the user input which was (35) the first if statement will check if the value is greater or equal to 18, which is True so the code will run and print &lsquo;you are an adult&rsquo;,
+then the second if statement will be executed and check if user_age is greater or equal to 13 which is True because 35 &gt;= 13 and this cause the code inside the second if statement
+to run and print out the message &ldquo;You are a teenager&rdquo;, then the third if statement will be executed and check if the user_age is less than 13 which is False (35 &lt; 13), so the code inside
+the third if statement body will not be executed.<br/>
+On the other hand when we use &lsquo;else, elif&rsquo; statements the code inside the body of both of them will not be executed if the statement that is before them is True.<br/></p>
+
+<h2 id="2-python-for-loop">2 Python for loop:</h2>
+
+<p>Imagine that we have list or a sequence that contain alot of items more than 50 or 100 item, how can you go through each item in the list? if we try to access each item using the indexing method
+this will be a nightmare for us. To deal with such thing python provide the &lsquo;for&rsquo; statement which will run through all the list element.<br/></p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">0</span><span style="color:#75715e">#list of numbers</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span>list_of_numbers <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">10</span>]
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span>sum <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">5</span><span style="color:#66d9ef">for</span> number <span style="color:#f92672">in</span> list_of_numbers:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">6</span>    sum <span style="color:#f92672">+=</span> number
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">7</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">8</span><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;the sum is:&#34;</span>, sum)</code></pre></div>
+
+<p>In this example we have created a list of numbers and a variable called &lsquo;sum&rsquo; which we will use it to contain the sum of all the numbers in the list.<br/>
+Then we use the &lsquo;for&rsquo; statement to iterate over our sequence (list_of_numbers) followed by the variable &lsquo;number&rsquo; which will contain the current extracted element on every iteration, after that
+we use the &lsquo;in&rsquo; statement followed by the sequence that we want to iterate over it.<br/>
+You can name the variable &lsquo;number&rsquo; any name you want, i named it &lsquo;number&rsquo; because it describe its own content.<br/>
+The for statement can be used on other sequence like (string, tuple and dictionary).<br/>
+Lets see some examples:<br/></p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 0</span>user_info <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;user_name&#39;</span>:<span style="color:#e6db74">&#39;mike&#39;</span>, <span style="color:#e6db74">&#39;age&#39;</span>:<span style="color:#ae81ff">24</span>, <span style="color:#e6db74">&#39;job&#39;</span>:<span style="color:#e6db74">&#39;Full Stack Developer&#39;</span>}
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span><span style="color:#e6db74">&#39;&#39;&#39;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span><span style="color:#e6db74">To extract both key and value of a dictionary we have to use .items()
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span><span style="color:#e6db74">on the dict var.
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span><span style="color:#e6db74">&#39;&#39;&#39;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span><span style="color:#66d9ef">for</span> key, val <span style="color:#f92672">in</span> user_info<span style="color:#f92672">.</span>items():
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span>    <span style="color:#66d9ef">print</span>(key,<span style="color:#e6db74">&#34;:&#34;</span>, val)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span><span style="color:#75715e">#OUTPUT:</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span><span style="color:#e6db74">&#39;&#39;&#39;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span><span style="color:#e6db74">&gt;&gt; user_name : mike
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12</span><span style="color:#e6db74">&gt;&gt; age : 24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13</span><span style="color:#e6db74">&gt;&gt; job : Full Stack Developer
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14</span><span style="color:#e6db74">&#39;&#39;&#39;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">15</span>	
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">16</span>name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Mike&#39;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">17</span><span style="color:#66d9ef">for</span> character <span style="color:#f92672">in</span> name:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">18</span>    <span style="color:#66d9ef">print</span>(character)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">19</span>	
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">20</span><span style="color:#75715e">#OUTPUT</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">21</span><span style="color:#e6db74">&#39;&#39;&#39;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">22</span><span style="color:#e6db74">&gt;&gt; M 
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">23</span><span style="color:#e6db74">&gt;&gt; i 
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">24</span><span style="color:#e6db74">&gt;&gt; k
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">25</span><span style="color:#e6db74">&gt;&gt; e
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">26</span><span style="color:#e6db74">&#39;&#39;&#39;</span></code></pre></div>
+
+<h2 id="3-python-while-loop">3 Python while loop :</h2>
+
+<p>While loop is used to repeat a block of code as long as the test expression is True.<br/></p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 0</span>counter <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> 
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span><span style="color:#66d9ef">while</span> counter <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">5</span>:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span>    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Hello&#34;</span>)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span>	counter <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span><span style="color:#75715e">#OUTPUT</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span><span style="color:#e6db74">&#39;&#39;&#39;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span><span style="color:#e6db74">&gt;&gt; Hello
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span><span style="color:#e6db74">&gt;&gt; Hello
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span><span style="color:#e6db74">&gt;&gt; Hello
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span><span style="color:#e6db74">&gt;&gt; Hello
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12</span><span style="color:#e6db74">&gt;&gt; Hello
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13</span><span style="color:#e6db74">&#39;&#39;&#39;</span></code></pre></div>
+As you see we add a test expression after the &lsquo;while&rsquo; statement, then we add the code that we want it to be repeated, here we want to print the word &lsquo;Hello&rsquo;
+then we add 1 to the counter variable to increment it by one on each iteration, if we don&rsquo;t do that the loop will run forever because the test expression will always be True.<br/></p>
+
+<h2 id="4-python-break-and-continue-statement">4 Python break and continue Statement :</h2>
+
+<p>Some time when we are dealing with loops we want to stop or skip the iteration based on some condition, to do that we can use break and continue.<br/>
+Lets say that we want to iterate over a string and stop the iteration when we find a specific character, to do that we will specify our test condition then we use the break statement
+to stop the loop.<br/></p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 0</span>var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello World&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span><span style="color:#66d9ef">for</span> character <span style="color:#f92672">in</span> var:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span>    <span style="color:#66d9ef">if</span> character <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39; &#39;</span>:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span>	    <span style="color:#66d9ef">break</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>	 <span style="color:#66d9ef">print</span>(character)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span><span style="color:#75715e">#OUTPUT</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span><span style="color:#e6db74">&#39;&#39;&#39;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span><span style="color:#e6db74">&gt;&gt; H
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span><span style="color:#e6db74">&gt;&gt; e
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span><span style="color:#e6db74">&gt;&gt; l 
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12</span><span style="color:#e6db74">&gt;&gt; l 
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13</span><span style="color:#e6db74">&gt;&gt; o
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14</span><span style="color:#e6db74">&#39;&#39;&#39;</span></code></pre></div>
+In this code the we iterate over the string &lsquo;Hello World&rsquo; and check if the character is a space if the test expression is True the loop will stop due to the break statement otherwise
+it will print the character.<br/>
+Now lets say that we want to iterate over a sequence and we want to skip a specific item in that sequence, to do that we use the continue statement.<br/></p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 0</span>var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;MikiMiki&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2</span><span style="color:#66d9ef">for</span> character <span style="color:#f92672">in</span> var:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3</span>    <span style="color:#66d9ef">if</span> character <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;i&#39;</span>:
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4</span>	    <span style="color:#66d9ef">continue</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5</span>	 <span style="color:#66d9ef">print</span>(character)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7</span><span style="color:#75715e">#OUTPUT</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8</span><span style="color:#e6db74">&#39;&#39;&#39;
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9</span><span style="color:#e6db74">&gt;&gt; M
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10</span><span style="color:#e6db74">&gt;&gt; k
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11</span><span style="color:#e6db74">&gt;&gt; M 
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12</span><span style="color:#e6db74">&gt;&gt; k
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13</span><span style="color:#e6db74">&#39;&#39;&#39;</span></code></pre></div>
+As you see in this example the test expression is set to check if the current character is &lsquo;i&rsquo; then continue which will skip the rest of the code block go to the next item in the
+sequence.<br/></p>
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+
+
+
+
+
+
+
+
+<figure class="author-image">
+    <a class="img" href="https://readersblade.com" style="background-image: url(/images/logo.png)"><span class="hidden">Adnan's Picture</span></a>
+</figure>
+
+
+<section class="author">
+  <h4><a href="https://readersblade.com">Adnan</a></h4>
+  
+  <p>Read <a href="https://readersblade.com">more posts</a> by this author.</p>
+  
+  <div class="author-meta">
+    
+    <span class="author-link icon-link"><a href="https://www.logorain.com">https://www.logorain.com</a></span>
+  </div>
+</section>
+
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Flow%20Control&nbsp;-&nbsp;PyTutorials&amp;url=https%3a%2f%2freadersblade.com%2fflow-control%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2freadersblade.com%2fflow-control%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2freadersblade.com%2fflow-control%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+var disqus_config = function () {
+this.page.url = "https:\/\/readersblade.com\/flow-control\/";  
+this.page.identifier = "https:\/\/readersblade.com\/flow-control\/"; 
+};
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://https-3adnank-github-io-pytutorials.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+
+
+  </footer>
+</article>
+
+</main>
+
+
+  <aside class="read-next">
+  
+  
+      <a class="read-next-story prev" style="no-cover" href="https://readersblade.com/python-strings/">
+          <section class="post">
+              <h2>Python Strings</h2>
+          </section>
+      </a>
+  
+</aside>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">PyTutorials</a> All rights reserved - 2018</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="https://readersblade.com/js/jquery.js"></script>
+    <script type="text/javascript" src="https://readersblade.com/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://readersblade.com/js/index.js"></script>
+    
+</body>
+</html>
+

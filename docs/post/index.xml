@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2018</copyright>
-    <lastBuildDate>Wed, 20 Jun 2018 18:20:55 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Jul 2018 12:12:30 +0000</lastBuildDate>
     
 	<atom:link href="https://readersblade.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Flow Control</title>
+      <link>https://readersblade.com/flow-control/</link>
+      <pubDate>Sun, 22 Jul 2018 12:12:30 +0000</pubDate>
+      
+      <guid>https://readersblade.com/flow-control/</guid>
+      <description>In this tutorial you will learn:
+ Python if, elif and else Statement Python for Loop Python while Loop Python break and continue Statement  1 Python if, elif and else Statement: These statements are used when we want to make some decisions in our program to run some codes for a specific condition. The if statement will first take a test expression and will run the code only if the result of the test expression is True.</description>
+    </item>
     
     <item>
       <title>Python Strings</title>

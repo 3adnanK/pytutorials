@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://readersblade.com/flow-control/</loc>
+    <lastmod>2018-07-22T12:12:30+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://readersblade.com/python-strings/</loc>
     <lastmod>2018-06-20T18:20:55+00:00</lastmod>
   </url>
@@ -44,13 +49,13 @@
   
   <url>
     <loc>https://readersblade.com/post/</loc>
-    <lastmod>2018-06-20T18:20:55+00:00</lastmod>
+    <lastmod>2018-07-22T12:12:30+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://readersblade.com/</loc>
-    <lastmod>2018-06-20T18:20:55+00:00</lastmod>
+    <lastmod>2018-07-22T12:12:30+00:00</lastmod>
     <priority>0</priority>
   </url>
   
