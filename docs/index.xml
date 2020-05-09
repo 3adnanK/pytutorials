@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PyTutorials</title>
-    <link>https://readersblade.com/</link>
+    <link>https://3adnank.github.io/pytutorials/</link>
     <description>Recent content on PyTutorials</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2018</copyright>
     <lastBuildDate>Sun, 22 Jul 2018 12:12:30 +0000</lastBuildDate>
     
-	<atom:link href="https://readersblade.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://3adnank.github.io/pytutorials/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Flow Control</title>
-      <link>https://readersblade.com/flow-control/</link>
+      <link>https://3adnank.github.io/pytutorials/flow-control/</link>
       <pubDate>Sun, 22 Jul 2018 12:12:30 +0000</pubDate>
       
-      <guid>https://readersblade.com/flow-control/</guid>
+      <guid>https://3adnank.github.io/pytutorials/flow-control/</guid>
       <description>In this tutorial you will learn:
  Python if, elif and else Statement Python for Loop Python while Loop Python break and continue Statement  1 Python if, elif and else Statement: These statements are used when we want to make some decisions in our program to run some codes for a specific condition. The if statement will first take a test expression and will run the code only if the result of the test expression is True.</description>
     </item>
     
     <item>
       <title>Python Strings</title>
-      <link>https://readersblade.com/python-strings/</link>
+      <link>https://3adnank.github.io/pytutorials/python-strings/</link>
       <pubDate>Wed, 20 Jun 2018 18:20:55 +0000</pubDate>
       
-      <guid>https://readersblade.com/python-strings/</guid>
+      <guid>https://3adnank.github.io/pytutorials/python-strings/</guid>
       <description>In this tutorial you will learn:
  String indexing and slicing How to count the number of characters using len() String operations Some useful string methods  1 String indexing and slicing: In the prevous tutorial (Python Data Types Part Two), we have seen how to access any character in a string using indexing method:
 0var = &amp;#34;Hello World&amp;#34; 1 2#OUTPUT: H o 3print(var[0], var[4]) The index numbering in python and some other programming language start from zero (0).</description>
@@ -35,20 +35,20 @@
     
     <item>
       <title>Python Data Types Part Two</title>
-      <link>https://readersblade.com/python-data-types-part-two/</link>
+      <link>https://3adnank.github.io/pytutorials/python-data-types-part-two/</link>
       <pubDate>Thu, 14 Jun 2018 01:12:23 +0000</pubDate>
       
-      <guid>https://readersblade.com/python-data-types-part-two/</guid>
+      <guid>https://3adnank.github.io/pytutorials/python-data-types-part-two/</guid>
       <description>In this tutorial you will learn:
  Strings List Tuple Set Dictionary  1 Strings: We have already been using this type in prevoius tutorials, this data type is actualy a sequence of characters enclosed within single (&amp;ldquo;) or double quotes (&amp;rdquo;&amp;ldquo;). Strings (called &amp;ldquo;str&amp;rdquo; in python) are an immutable sequence which means we can&amp;rsquo;t change any of the charachters in the sequence. Lets make this more clear to you with an example:</description>
     </item>
     
     <item>
       <title>Python Operators</title>
-      <link>https://readersblade.com/python-operators/</link>
+      <link>https://3adnank.github.io/pytutorials/python-operators/</link>
       <pubDate>Tue, 12 Jun 2018 17:20:08 +0000</pubDate>
       
-      <guid>https://readersblade.com/python-operators/</guid>
+      <guid>https://3adnank.github.io/pytutorials/python-operators/</guid>
       <description>In this tutorial you will learn:
  Arithmetic operators Assignment operators Comparison operators Logical operators Bitwise operators Membership operators Identity operators  Introduction: Before we jump to the operators lets define what is an operator. An operator is a special symbol that python or any other programming language use to make some arithmetic, assignment or logical computation.
 1 Arithmetic operators: Arithmetic operators are used to perform mathematical operations that we are familliar with, like addition, subtraction, division and multiplication etc.</description>
@@ -56,20 +56,20 @@
     
     <item>
       <title>Python Data Types Part One</title>
-      <link>https://readersblade.com/python-data-types-part-one/</link>
+      <link>https://3adnank.github.io/pytutorials/python-data-types-part-one/</link>
       <pubDate>Mon, 11 Jun 2018 15:04:47 +0000</pubDate>
       
-      <guid>https://readersblade.com/python-data-types-part-one/</guid>
+      <guid>https://3adnank.github.io/pytutorials/python-data-types-part-one/</guid>
       <description>In this tutorial you will learn:
  Numbers Booleans NoneType Type conversion  Introduction: Python data-type is a classification that specifies the type of value a variable has. Since everything in python is an object, every type in python have his own specific methods and attributes that can be used on this type. (we will discuss more about Ojbects later and see how to create our own data type).</description>
     </item>
     
     <item>
       <title>Multiple Assignment and Comments</title>
-      <link>https://readersblade.com/multiple-assignment-and-comments/</link>
+      <link>https://3adnank.github.io/pytutorials/multiple-assignment-and-comments/</link>
       <pubDate>Sun, 10 Jun 2018 14:16:53 +0000</pubDate>
       
-      <guid>https://readersblade.com/multiple-assignment-and-comments/</guid>
+      <guid>https://3adnank.github.io/pytutorials/multiple-assignment-and-comments/</guid>
       <description>In this tutorial you will learn:
  Multiple assginment Comments  1 Multiple assginment: In the previous tutorial Variables and Inputs/Outputs we saw how to make a variable and assign to it a value using the assignement sign &amp;lsquo;=&amp;rsquo;. In python we can create more than one variables on the same line, lets see an example:
 0x, y, z = 22, 23, 24 1 2print(x, y, z)  OUTPUT: 22 23 24</description>
@@ -77,20 +77,20 @@
     
     <item>
       <title>Variables and Inputs/Outputs</title>
-      <link>https://readersblade.com/variables-and-io/</link>
+      <link>https://3adnank.github.io/pytutorials/variables-and-io/</link>
       <pubDate>Wed, 06 Jun 2018 14:14:37 +0000</pubDate>
       
-      <guid>https://readersblade.com/variables-and-io/</guid>
+      <guid>https://3adnank.github.io/pytutorials/variables-and-io/</guid>
       <description>In this tutorial you will learn:
  What is a variable How to create variables in python How to use print to display variables How to read user inputs  1 What is a variable: To understand what is a variable lets imagine that we have two boxes, the first box contain some clothes and the second one contain some video games CD&amp;rsquo;s as you see our two boxes are containers that holdes some objects.</description>
     </item>
     
     <item>
       <title>Getting Started</title>
-      <link>https://readersblade.com/getting-started/</link>
+      <link>https://3adnank.github.io/pytutorials/getting-started/</link>
       <pubDate>Mon, 04 Jun 2018 23:10:16 +0000</pubDate>
       
-      <guid>https://readersblade.com/getting-started/</guid>
+      <guid>https://3adnank.github.io/pytutorials/getting-started/</guid>
       <description>Before starting the pytutorials series i want to explain what is PyTutorials. PyTutorials is a beginner guide to learn the basics of python and programming, each tutorial will contain an explanation on the topic followed by 2 or 3 exercices to practice what you have learned. Two tutorials will be posted every week. In this tutorial we will be using python 3. I am assuming that you already have python installed on your machine if not you can download it from here or you can use an online interpreter for python.</description>
     </item>
     
